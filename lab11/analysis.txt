@@ -1,0 +1,33 @@
+ANALYSIS:
+
+
+The -O3 optimization flag was used to compile this project. After testing
+the bisection formula with several iterations, it was found that -O3 gave
+the best timing results for this assignment. It should be noted that the
+second best optimization was given by -O0 which was on average .2 second
+behind when executing 5000000 iterations. 
+    The time taken to execute each algorithm varies wildly on the bounds
+given. For the tests given the timing for each algorithm is given below at
+the -O3 optimization level. Data was collected for 50000 iterations.
+
+
+Qn was calculated based on the amount of precision needed for the decimal
+places. A value of 12 was chosen because this will be larger than the
+smallest tolerance. My QN part was messed up, I'm not sure what was wrong
+it, I think it might have been my iPoly function. I don't think I did 
+something probably with the floatToFixed part of the function.
+
+    The smallest QnI coule use was 16 which is really weird. My Qn roots
+weren't correct either. So I just stuck with that number since that part
+wasn't working.
+
+
+Why does changing the Qn value change the error?  Try a Qn of 32, what 
+happens?  Why 
+
+The Qn values changes the error becuase the higher the number, the more 
+precision. So instead of 1.23 for Qn2, a Qn5 would be 2.34766. 
+When we try Qn of 32, the data is out of range because a long can only
+hold 32 bits and Qn 32 is 33, so it surpassed the trehold.
+
+

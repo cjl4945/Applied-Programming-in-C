@@ -1,0 +1,104 @@
+Prelab:
+
+
+Floating Point Limitation:
+
+3. The addition didn't work. I proved the addition didn't work by printing 
+out DBL_EPSILON and the double precision point number 10 seperately, and if 
+the the sum equaled the DBL_EPSILON or the double precision point number 10
+then it was clear that the addition didn't work. The DBL_EPSILON represents 
+the 16 fractional bits in QN format.   
+
+QN Conversion:
+
+Conversion test
+Fixed point of '0.000000' is '0'
+Binary of 0.000000 is 	[0]
+Floating point of '0' is '0'
+
+Another name for Qn0 is just zero. The code did match my prelab value, except 
+the qn format was q15.0 and this was q0, so the number of bi
+
+
+
+
+
+Conversion test
+Fixed point of '0.000000' is '0'
+Binary of 0.000000 is 	[0000000000000000]
+Floating point of '0' is '0'
+
+Another name for Qn0 is just zero. The code did match my prelab value, except
+the qn format was q15.0 and this was q0, so the number of bits used were
+different
+
+
+
+Fixed point of '12.250000' is '98'
+Binary of 12.250000 is 	[0000000000001100]
+Floating point of '98' is '12'
+
+The code value did match my prelab. but the binary was different since
+the bits in prelab were 16 bits and this was 4 bits. Both fractional and
+integer bits were lost.
+
+
+Fixed point of '12.062500' is '96'
+Binary of 12.062500 is 	[0000000000001100]
+Floating point of '96' is '12'
+
+The code value didn't match my prelab, my prelab answer was 96.5 which rounded
+to 97. Data was lost in the fractional bits because there wasn't any space
+allotted for the fractional bits. And some of the integer bits were lost.
+
+
+
+Fixed point of '12.062500' is '193'
+Binary of 12.062500 is 	[0000000000001100]
+Floating point of '193' is '12'
+
+
+My prelab results were 193 and my inlab results were 193. The fractional bits
+were lost becuase there wasn't any space allotted for the for the fractional bits.               
+
+
+QN DIVISION:
+
+I personally didn't have any trouble with Qn_DIVIDE, it seemed that the 
+integer divsion and Qn_DIVIDE worked the same as the integer divison. 
+qnum1: 0
+qnum2: 0
+fnum2: -0.000002
+Absoulte values:
+qnum1: 0
+qnum2: 0
+fnum2: 0.000002
+
+QN Mutiply. 
+
+Multiplication test
+16809984 x 197918 = 12673152
+64.125 x 0.755 = 48.414375
+
+It appears as if some data was lost becuase the fixed-point of 48.414375 
+isn't 12673152 but it's fairly close, so I would suggest that the math was 
+correct, but some data was obviously lost. 
+
+
+F(x) = x**3 ‐.0001x**2 ‐ 676X + .067
+F(1) = -674.932495
+F(x) = x**3 ‐x**2/10000 ‐ 676X + 169/25
+F(1) = -676.000000
+
+
+when the there were fractions involved in the equation as the powers, there's
+a difference in the equations. When the function does .0001x**2, that's 
+different than x**2/10000. So that could be the reason for the answer being 
+off by a little. 
+
+
+F(x) = x**3 ‐.0001x**2 ‐ 676X + .0676
+F(1) in Qn evaluation  = -2147483648
+I didn't have any implementation issues.
+
+The fixed point is not close to the floating point number at all. 

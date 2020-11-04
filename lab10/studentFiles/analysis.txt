@@ -1,0 +1,27 @@
+Assingment:
+
+So I tried to rework where I put my timing macros becuase it seemed that every
+time the macro iterated, it would print the results of the roots. So to 
+actually get results from the timing macro, there needed to be a lot of 
+iterations. I used 50000, and 50000 roots were also printed out so ran each 
+optimization level by head with each permance time at the bottom of the 50000 
+roots. I did put the the results in the results.txt file, there it can be 
+shown how many time the roots were printed. But i individually collected the 
+performances times and average them out by my self. And the following 
+performances times for each level are as followed. 
+
+Level -O1:
+Time elapsed (timer) = 0.340000 sec.
+Avg Elapsed CPU Time Over 50000 iterations (timer) = 6.6e-06 sec.
+
+Level -O2:
+Time elapsed (timer) = 0.340000 sec.
+Avg Elapsed CPU Time Over 50000 iterations (timer) = 6.8e-06 sec.
+
+Level -O3:
+Time elapsed (timer) = 0.350000 sec.
+Avg Elapsed CPU Time Over 50000 iterations (timer) = 7e-06 sec.
+
+By these performances, I decided to choose the optimization level -O1. 
+It seemed the program took more time when imaginary numbers were involved.
+But -O1 still seemed to be the best option.

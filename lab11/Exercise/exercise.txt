@@ -1,0 +1,64 @@
+Prelab:
+
+
+Floating Point Limitation:
+
+3. The addition didn't work. I proved the addition didn't work by printing 
+out DBL_EPSILON and the double precision point number 10 seperately, and if 
+the the sum equaled the DBL_EPSILON or the double precision point number 10
+then it was clear that the addition didn't work. The DBL_EPSILON represents 
+the 16 fractional bits in QN format.   
+
+QN Conversion:
+
+Conversion test
+Fixed point of '0.000000' is '0'
+Binary of 0.000000 is 	[0]
+Floating point of '0' is '0'
+
+Another name for Qn0 is just zero. The code did match my prelab value, except 
+the qn format was q15.0 and this was q0, so the number of bi
+
+
+
+
+
+Conversion test
+Fixed point of '0.000000' is '0'
+Binary of 0.000000 is 	[0000000000000000]
+Floating point of '0' is '0'
+
+Another name for Qn0 is just zero. The code did match my prelab value, except
+the qn format was q15.0 and this was q0, so the number of bits used were
+different
+
+
+
+Fixed point of '12.250000' is '98'
+Binary of 12.250000 is 	[0000000000001100]
+Floating point of '98' is '12'
+
+The code value did match my prelab. but the binary was different since
+the bits in prelab were 16 bits and this was 4 bits. Both fractional and
+integer bits were lost.
+
+
+Fixed point of '12.062500' is '96'
+Binary of 12.062500 is 	[0000000000001100]
+Floating point of '96' is '12'
+
+The code value didn't match my prelab, my prelab answer was 96.5 which rounded
+to 97. Data was lost in the fractional bits because there wasn't any space
+allotted for the fractional bits. And some of the integer bits were lost.
+
+
+
+Fixed point of '12.062500' is '193'
+Binary of 12.062500 is 	[0000000000001100]
+Floating point of '193' is '12'
+
+
+My prelab results were 193 and my inlab results were 193. The fractional bits
+were lost becuase there wasn't any space allotted for the for the fractional bits.               
+
+
