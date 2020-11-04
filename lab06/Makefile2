@@ -1,0 +1,26 @@
+CC=gcc
+CFLAGS=-I.
+INC = myFunctions.h
+OBJ = myMain.o myFunctions.o 
+OUT = myMain
+
+%.o: %.c $(INC)	
+	$(CC) -g -c -o $(OUT).o $< $(CFLAGS)
+
+all: $(OBJ)	
+	$(CC) -g -o $(OUT) $^ $(CFLAGS)
+
+clean:
+	rm -f myMain myMain.o
+
+	
+mem:
+
+	valgrind ./$(OUT)
+	
+help:
+	@echo "Makefile2 options:  all, mem, clean, help"
+
+test:
+	@echo $(CC) -g -c -o $(OUT).o $< $(CFLAGS)
+	@echo $(CC) -g -o $(OUT) $^ $(CFLAGS)
