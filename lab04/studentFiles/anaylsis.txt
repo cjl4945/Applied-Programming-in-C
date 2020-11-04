@@ -1,0 +1,4 @@
+1. There is one memory leak
+
+2. 4,094 bytes are being used and 0 bytes are being returned
+

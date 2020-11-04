@@ -1,0 +1,325 @@
+==25841== Memcheck, a memory error detector
+==25841== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==25841== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
+==25841== Command: ./simpleTest 0
+==25841== 
+The list has 0 elements
+From the front:
+
+From the back:
+
+Removing one element from the front
+Attempted to remove front of list, list was empty. 
+
+Destroying the linked list
+==25841== 
+==25841== HEAP SUMMARY:
+==25841==     in use at exit: 0 bytes in 0 blocks
+==25841==   total heap usage: 0 allocs, 0 frees, 0 bytes allocated
+==25841== 
+==25841== All heap blocks were freed -- no leaks are possible
+==25841== 
+==25841== For counts of detected and suppressed errors, rerun with: -v
+==25841== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+==25842== Memcheck, a memory error detector
+==25842== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==25842== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
+==25842== Command: ./simpleTest 1
+==25842== 
+==25842== Invalid read of size 8
+==25842==    at 0x40093D: RemoveFromFrontOfLinkedList (LinkedLists.c:127)
+==25842==    by 0x4007B9: main (simpleTest.c:81)
+==25842==  Address 0x8 is not stack'd, malloc'd or (recently) free'd
+==25842== 
+==25842== 
+==25842== Process terminating with default action of signal 11 (SIGSEGV)
+==25842==  Access not within mapped region at address 0x8
+==25842==    at 0x40093D: RemoveFromFrontOfLinkedList (LinkedLists.c:127)
+==25842==    by 0x4007B9: main (simpleTest.c:81)
+==25842==  If you believe this happened as a result of a stack
+==25842==  overflow in your program's main thread (unlikely but
+==25842==  possible), you can try to increase the size of the
+==25842==  main thread stack using the --main-stacksize= flag.
+==25842==  The main thread stack size used in this run was 8388608.
+The list has 1 elements
+From the front:
+Node 0 has value 'First Line'
+
+From the back:
+Node 0 has value 'First Line'
+
+Removing one element from the front
+==25842== 
+==25842== HEAP SUMMARY:
+==25842==     in use at exit: 272 bytes in 1 blocks
+==25842==   total heap usage: 1 allocs, 0 frees, 272 bytes allocated
+==25842== 
+==25842== LEAK SUMMARY:
+==25842==    definitely lost: 0 bytes in 0 blocks
+==25842==    indirectly lost: 0 bytes in 0 blocks
+==25842==      possibly lost: 0 bytes in 0 blocks
+==25842==    still reachable: 272 bytes in 1 blocks
+==25842==         suppressed: 0 bytes in 0 blocks
+==25842== Reachable blocks (those to which a pointer was found) are not shown.
+==25842== To see them, rerun with: --leak-check=full --show-leak-kinds=all
+==25842== 
+==25842== For counts of detected and suppressed errors, rerun with: -v
+==25842== ERROR SUMMARY: 1 errors from 1 contexts (suppressed: 0 from 0)
+==25845== Memcheck, a memory error detector
+==25845== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==25845== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
+==25845== Command: ./simpleTest 2
+==25845== 
+==25845== Invalid read of size 1
+==25845==    at 0x4E82EF9: vfprintf (in /usr/lib64/libc-2.17.so)
+==25845==    by 0x4E89328: printf (in /usr/lib64/libc-2.17.so)
+==25845==    by 0x400808: main (simpleTest.c:94)
+==25845==  Address 0x5203050 is 16 bytes inside a block of size 272 free'd
+==25845==    at 0x4C2ACBD: free (vg_replace_malloc.c:530)
+==25845==    by 0x400955: RemoveFromFrontOfLinkedList (LinkedLists.c:134)
+==25845==    by 0x4007B9: main (simpleTest.c:81)
+==25845==  Block was alloc'd at
+==25845==    at 0x4C29BC3: malloc (vg_replace_malloc.c:299)
+==25845==    by 0x4008BB: AddToBackOfLinkedList (LinkedLists.c:69)
+==25845==    by 0x4006D5: main (simpleTest.c:47)
+==25845== 
+==25845== Invalid read of size 1
+==25845==    at 0x4C30A48: __GI_mempcpy (vg_replace_strmem.c:1525)
+==25845==    by 0x4EB07C4: _IO_file_xsputn@@GLIBC_2.2.5 (in /usr/lib64/libc-2.17.so)
+==25845==    by 0x4E82EB2: vfprintf (in /usr/lib64/libc-2.17.so)
+==25845==    by 0x4E89328: printf (in /usr/lib64/libc-2.17.so)
+==25845==    by 0x400808: main (simpleTest.c:94)
+==25845==  Address 0x5203050 is 16 bytes inside a block of size 272 free'd
+==25845==    at 0x4C2ACBD: free (vg_replace_malloc.c:530)
+==25845==    by 0x400955: RemoveFromFrontOfLinkedList (LinkedLists.c:134)
+==25845==    by 0x4007B9: main (simpleTest.c:81)
+==25845==  Block was alloc'd at
+==25845==    at 0x4C29BC3: malloc (vg_replace_malloc.c:299)
+==25845==    by 0x4008BB: AddToBackOfLinkedList (LinkedLists.c:69)
+==25845==    by 0x4006D5: main (simpleTest.c:47)
+==25845== 
+==25845== Invalid read of size 1
+==25845==    at 0x4C30A56: __GI_mempcpy (vg_replace_strmem.c:1525)
+==25845==    by 0x4EB07C4: _IO_file_xsputn@@GLIBC_2.2.5 (in /usr/lib64/libc-2.17.so)
+==25845==    by 0x4E82EB2: vfprintf (in /usr/lib64/libc-2.17.so)
+==25845==    by 0x4E89328: printf (in /usr/lib64/libc-2.17.so)
+==25845==    by 0x400808: main (simpleTest.c:94)
+==25845==  Address 0x5203052 is 18 bytes inside a block of size 272 free'd
+==25845==    at 0x4C2ACBD: free (vg_replace_malloc.c:530)
+==25845==    by 0x400955: RemoveFromFrontOfLinkedList (LinkedLists.c:134)
+==25845==    by 0x4007B9: main (simpleTest.c:81)
+==25845==  Block was alloc'd at
+==25845==    at 0x4C29BC3: malloc (vg_replace_malloc.c:299)
+==25845==    by 0x4008BB: AddToBackOfLinkedList (LinkedLists.c:69)
+==25845==    by 0x4006D5: main (simpleTest.c:47)
+==25845== 
+==25845== Invalid free() / delete / delete[] / realloc()
+==25845==    at 0x4C2ACBD: free (vg_replace_malloc.c:530)
+==25845==    by 0x400810: main (simpleTest.c:95)
+==25845==  Address 0x5203050 is 16 bytes inside a block of size 272 free'd
+==25845==    at 0x4C2ACBD: free (vg_replace_malloc.c:530)
+==25845==    by 0x400955: RemoveFromFrontOfLinkedList (LinkedLists.c:134)
+==25845==    by 0x4007B9: main (simpleTest.c:81)
+==25845==  Block was alloc'd at
+==25845==    at 0x4C29BC3: malloc (vg_replace_malloc.c:299)
+==25845==    by 0x4008BB: AddToBackOfLinkedList (LinkedLists.c:69)
+==25845==    by 0x4006D5: main (simpleTest.c:47)
+==25845== 
+The list has 2 elements
+From the front:
+Node 0 has value 'First Line'
+Node 1 has value 'Second Line'
+
+From the back:
+Node 0 has value 'Second Line'
+Node 1 has value 'First Line'
+
+Removing one element from the front
+
+Remove from front of list, new front is: 'Second Line' 
+Removed value is: First Line 
+
+Destroying the linked list
+==25845== 
+==25845== HEAP SUMMARY:
+==25845==     in use at exit: 0 bytes in 0 blocks
+==25845==   total heap usage: 2 allocs, 3 frees, 544 bytes allocated
+==25845== 
+==25845== All heap blocks were freed -- no leaks are possible
+==25845== 
+==25845== For counts of detected and suppressed errors, rerun with: -v
+==25845== ERROR SUMMARY: 22 errors from 4 contexts (suppressed: 0 from 0)
+==25846== Memcheck, a memory error detector
+==25846== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==25846== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
+==25846== Command: ./simpleTest 3
+==25846== 
+==25846== Invalid read of size 1
+==25846==    at 0x4E82EF9: vfprintf (in /usr/lib64/libc-2.17.so)
+==25846==    by 0x4E89328: printf (in /usr/lib64/libc-2.17.so)
+==25846==    by 0x400808: main (simpleTest.c:94)
+==25846==  Address 0x5203050 is 16 bytes inside a block of size 272 free'd
+==25846==    at 0x4C2ACBD: free (vg_replace_malloc.c:530)
+==25846==    by 0x400955: RemoveFromFrontOfLinkedList (LinkedLists.c:134)
+==25846==    by 0x4007B9: main (simpleTest.c:81)
+==25846==  Block was alloc'd at
+==25846==    at 0x4C29BC3: malloc (vg_replace_malloc.c:299)
+==25846==    by 0x4008BB: AddToBackOfLinkedList (LinkedLists.c:69)
+==25846==    by 0x4006D5: main (simpleTest.c:47)
+==25846== 
+==25846== Invalid read of size 1
+==25846==    at 0x4C30A48: __GI_mempcpy (vg_replace_strmem.c:1525)
+==25846==    by 0x4EB07C4: _IO_file_xsputn@@GLIBC_2.2.5 (in /usr/lib64/libc-2.17.so)
+==25846==    by 0x4E82EB2: vfprintf (in /usr/lib64/libc-2.17.so)
+==25846==    by 0x4E89328: printf (in /usr/lib64/libc-2.17.so)
+==25846==    by 0x400808: main (simpleTest.c:94)
+==25846==  Address 0x5203050 is 16 bytes inside a block of size 272 free'd
+==25846==    at 0x4C2ACBD: free (vg_replace_malloc.c:530)
+==25846==    by 0x400955: RemoveFromFrontOfLinkedList (LinkedLists.c:134)
+==25846==    by 0x4007B9: main (simpleTest.c:81)
+==25846==  Block was alloc'd at
+==25846==    at 0x4C29BC3: malloc (vg_replace_malloc.c:299)
+==25846==    by 0x4008BB: AddToBackOfLinkedList (LinkedLists.c:69)
+==25846==    by 0x4006D5: main (simpleTest.c:47)
+==25846== 
+==25846== Invalid read of size 1
+==25846==    at 0x4C30A56: __GI_mempcpy (vg_replace_strmem.c:1525)
+==25846==    by 0x4EB07C4: _IO_file_xsputn@@GLIBC_2.2.5 (in /usr/lib64/libc-2.17.so)
+==25846==    by 0x4E82EB2: vfprintf (in /usr/lib64/libc-2.17.so)
+==25846==    by 0x4E89328: printf (in /usr/lib64/libc-2.17.so)
+==25846==    by 0x400808: main (simpleTest.c:94)
+==25846==  Address 0x5203052 is 18 bytes inside a block of size 272 free'd
+==25846==    at 0x4C2ACBD: free (vg_replace_malloc.c:530)
+==25846==    by 0x400955: RemoveFromFrontOfLinkedList (LinkedLists.c:134)
+==25846==    by 0x4007B9: main (simpleTest.c:81)
+==25846==  Block was alloc'd at
+==25846==    at 0x4C29BC3: malloc (vg_replace_malloc.c:299)
+==25846==    by 0x4008BB: AddToBackOfLinkedList (LinkedLists.c:69)
+==25846==    by 0x4006D5: main (simpleTest.c:47)
+==25846== 
+==25846== Invalid free() / delete / delete[] / realloc()
+==25846==    at 0x4C2ACBD: free (vg_replace_malloc.c:530)
+==25846==    by 0x400810: main (simpleTest.c:95)
+==25846==  Address 0x5203050 is 16 bytes inside a block of size 272 free'd
+==25846==    at 0x4C2ACBD: free (vg_replace_malloc.c:530)
+==25846==    by 0x400955: RemoveFromFrontOfLinkedList (LinkedLists.c:134)
+==25846==    by 0x4007B9: main (simpleTest.c:81)
+==25846==  Block was alloc'd at
+==25846==    at 0x4C29BC3: malloc (vg_replace_malloc.c:299)
+==25846==    by 0x4008BB: AddToBackOfLinkedList (LinkedLists.c:69)
+==25846==    by 0x4006D5: main (simpleTest.c:47)
+==25846== 
+The list has 3 elements
+From the front:
+Node 0 has value 'First Line'
+Node 1 has value 'Second Line'
+Node 2 has value 'Third Line'
+
+From the back:
+Node 0 has value 'Third Line'
+Node 1 has value 'Second Line'
+Node 2 has value 'First Line'
+
+Removing one element from the front
+
+Remove from front of list, new front is: 'Second Line' 
+Removed value is: First Line 
+
+Destroying the linked list
+==25846== 
+==25846== HEAP SUMMARY:
+==25846==     in use at exit: 0 bytes in 0 blocks
+==25846==   total heap usage: 3 allocs, 4 frees, 816 bytes allocated
+==25846== 
+==25846== All heap blocks were freed -- no leaks are possible
+==25846== 
+==25846== For counts of detected and suppressed errors, rerun with: -v
+==25846== ERROR SUMMARY: 22 errors from 4 contexts (suppressed: 0 from 0)
+==25847== Memcheck, a memory error detector
+==25847== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==25847== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
+==25847== Command: ./simpleTest 4
+==25847== 
+==25847== Invalid read of size 1
+==25847==    at 0x4E82EF9: vfprintf (in /usr/lib64/libc-2.17.so)
+==25847==    by 0x4E89328: printf (in /usr/lib64/libc-2.17.so)
+==25847==    by 0x400808: main (simpleTest.c:94)
+==25847==  Address 0x5203050 is 16 bytes inside a block of size 272 free'd
+==25847==    at 0x4C2ACBD: free (vg_replace_malloc.c:530)
+==25847==    by 0x400955: RemoveFromFrontOfLinkedList (LinkedLists.c:134)
+==25847==    by 0x4007B9: main (simpleTest.c:81)
+==25847==  Block was alloc'd at
+==25847==    at 0x4C29BC3: malloc (vg_replace_malloc.c:299)
+==25847==    by 0x4008BB: AddToBackOfLinkedList (LinkedLists.c:69)
+==25847==    by 0x4006D5: main (simpleTest.c:47)
+==25847== 
+==25847== Invalid read of size 1
+==25847==    at 0x4C30A48: __GI_mempcpy (vg_replace_strmem.c:1525)
+==25847==    by 0x4EB07C4: _IO_file_xsputn@@GLIBC_2.2.5 (in /usr/lib64/libc-2.17.so)
+==25847==    by 0x4E82EB2: vfprintf (in /usr/lib64/libc-2.17.so)
+==25847==    by 0x4E89328: printf (in /usr/lib64/libc-2.17.so)
+==25847==    by 0x400808: main (simpleTest.c:94)
+==25847==  Address 0x5203050 is 16 bytes inside a block of size 272 free'd
+==25847==    at 0x4C2ACBD: free (vg_replace_malloc.c:530)
+==25847==    by 0x400955: RemoveFromFrontOfLinkedList (LinkedLists.c:134)
+==25847==    by 0x4007B9: main (simpleTest.c:81)
+==25847==  Block was alloc'd at
+==25847==    at 0x4C29BC3: malloc (vg_replace_malloc.c:299)
+==25847==    by 0x4008BB: AddToBackOfLinkedList (LinkedLists.c:69)
+==25847==    by 0x4006D5: main (simpleTest.c:47)
+==25847== 
+==25847== Invalid read of size 1
+==25847==    at 0x4C30A56: __GI_mempcpy (vg_replace_strmem.c:1525)
+==25847==    by 0x4EB07C4: _IO_file_xsputn@@GLIBC_2.2.5 (in /usr/lib64/libc-2.17.so)
+==25847==    by 0x4E82EB2: vfprintf (in /usr/lib64/libc-2.17.so)
+==25847==    by 0x4E89328: printf (in /usr/lib64/libc-2.17.so)
+==25847==    by 0x400808: main (simpleTest.c:94)
+==25847==  Address 0x5203052 is 18 bytes inside a block of size 272 free'd
+==25847==    at 0x4C2ACBD: free (vg_replace_malloc.c:530)
+==25847==    by 0x400955: RemoveFromFrontOfLinkedList (LinkedLists.c:134)
+==25847==    by 0x4007B9: main (simpleTest.c:81)
+==25847==  Block was alloc'd at
+==25847==    at 0x4C29BC3: malloc (vg_replace_malloc.c:299)
+==25847==    by 0x4008BB: AddToBackOfLinkedList (LinkedLists.c:69)
+==25847==    by 0x4006D5: main (simpleTest.c:47)
+==25847== 
+==25847== Invalid free() / delete / delete[] / realloc()
+==25847==    at 0x4C2ACBD: free (vg_replace_malloc.c:530)
+==25847==    by 0x400810: main (simpleTest.c:95)
+==25847==  Address 0x5203050 is 16 bytes inside a block of size 272 free'd
+==25847==    at 0x4C2ACBD: free (vg_replace_malloc.c:530)
+==25847==    by 0x400955: RemoveFromFrontOfLinkedList (LinkedLists.c:134)
+==25847==    by 0x4007B9: main (simpleTest.c:81)
+==25847==  Block was alloc'd at
+==25847==    at 0x4C29BC3: malloc (vg_replace_malloc.c:299)
+==25847==    by 0x4008BB: AddToBackOfLinkedList (LinkedLists.c:69)
+==25847==    by 0x4006D5: main (simpleTest.c:47)
+==25847== 
+The list has 4 elements
+From the front:
+Node 0 has value 'First Line'
+Node 1 has value 'Second Line'
+Node 2 has value 'Third Line'
+Node 3 has value 'Fourth Line'
+
+From the back:
+Node 0 has value 'Fourth Line'
+Node 1 has value 'Third Line'
+Node 2 has value 'Second Line'
+Node 3 has value 'First Line'
+
+Removing one element from the front
+
+Remove from front of list, new front is: 'Second Line' 
+Removed value is: First Line 
+
+Destroying the linked list
+==25847== 
+==25847== HEAP SUMMARY:
+==25847==     in use at exit: 0 bytes in 0 blocks
+==25847==   total heap usage: 4 allocs, 5 frees, 1,088 bytes allocated
+==25847== 
+==25847== All heap blocks were freed -- no leaks are possible
+==25847== 
+==25847== For counts of detected and suppressed errors, rerun with: -v
+==25847== ERROR SUMMARY: 22 errors from 4 contexts (suppressed: 0 from 0)

@@ -1,0 +1,36 @@
+analysis
+
+In the prelab we went over valgrind and the basics of it. Valgrind is used 
+to easily detect memory managemtn and threading bugs that are not easily 
+detectable with traditional trace and debug or code review sessions. Also
+in the prelab we ran valgrind on a program. On the first time valgrind was
+ran, an error in the memory was shown. The errror was fixed then valgrind 
+didn't produce any errrors
+
+Then in the interactive exercises, we were given two files to run through with
+valgrind. Both were erroneous files. The first file was freeing the heap 
+using malloc. The second file didn't free the heap either, but it a little 
+complex than the first file.
+
+Assignment:
+
+
+1. There is 1 memory leak when ./debutTst memory is called
+
+2. When reran with good, 4094 bytes is used and 0 is returned
+
+First off, my program wouldn't build. I tried to used my functions from the
+DynamicArrays.c file and referenced them at the top of the TestDarray.c file.
+I kept getting an error saying that the three functions that I referenced at 
+the top of the file were unreferenced.
+
+The way I implemented the TestDarray.c file was I first started out with if
+the DataFile passed in doesn't equal null then we'd intitialize the DArray.
+Then after that I used the function readData to populate the DArray with 
+the data provided from the inputted file. I then interate throguh the DArray
+to print the first and last 6 items in the DArray. I then free the heap
+using the DestroyArray. Then I use the fclose to close the file. 
+If the DataFile is null, an error message would print to the console
+and an error code is returned. Then if the argc doesn't equal 2 then
+another error message is printed to the console and an error code is returned.
+If all succeeds a success code will be returned. 

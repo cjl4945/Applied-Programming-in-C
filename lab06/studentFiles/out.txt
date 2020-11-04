@@ -1,0 +1,3 @@
+Searching for: space 
+Found space in the Linked List 
+Found space at index 206570 in the Dynamic Array 

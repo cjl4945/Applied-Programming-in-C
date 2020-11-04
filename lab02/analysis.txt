@@ -1,0 +1,50 @@
+1.)	Command: (-a -c asdf)
+	getopt() returned ='a'
+	getopt() returned ='c'
+	aflag = 1, bflag = 0, cvalue = asdf
+
+a sets the aflag. c prompts for another argument that would be taken as the cvalue and the cvalue is
+asdf
+
+2.)	Command: (-a -c)
+	getopt() returned ='a'
+	getopt() returned ='?'
+
+similar to step one, but a cvalue wasn't inputted so getopt returned ? to handle the error
+
+3.)	Command: (-a -c asdf qwer)
+	getopt() returned ='a'
+	getopt() returned ='c'
+	aflag = 1, bflag = 0, cvalue = asdf
+	Non-option argument qwer
+
+similar to step 1 but a non option argument was added and it was accounted for. c's required parameter
+was satisfied
+
+4.)	The ":" after the c means the -c has a required argument
+
+5.)	If ":" changes to "::" then the -c would have an optional argument
+
+6. 
+	Command: (-a -c asdf)
+	getopt() returned ='a'
+	getopt() returned ='c'
+	aflag = 1, bflag = 0, cvalue = (null)
+	Non-option argument asdf
+
+here we used abc::vwhich means the c has  a optional argument but a argument was passed and handled 
+	
+	Command: (-a -c)
+	getopt() returned ='a'
+	getopt() returned ='c'
+	aflag = 1, bflag = 0, cvalue = (null)
+there's no problem here because c has an optional argument and nothing was pass into it
+	
+	Command: (-a -c asdf qwer)
+	getopt() returned ='a'
+	getopt() returned ='c'
+	aflag = 1, bflag = 0, cvalue = (null)
+	Non-option argument asdf
+	Non-option argument qwer
+
+two optional arguments were passed in and handled. 

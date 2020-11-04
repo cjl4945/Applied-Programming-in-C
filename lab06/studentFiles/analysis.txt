@@ -1,0 +1,187 @@
+Analysis
+
+Prelab:
+
+For the prelab we were tasked with exucuting an makefile and examining its 
+results. First we were provided with a makefile. Then we had to exucute the 
+command make all. Then we have to exucute make mem to ensure that valgrind 
+isn't deteching any issues. The results are provided below. 
+
+Makefile examples 1: 
+
+ 
+CMPE380 Makefile Example!
+MyFib(0):0
+MyFib(1):1
+MyFib(2):1
+MyFib(3):2
+MyFib(4):3
+MyFib(5):5
+MyFib(6):8
+MyFib(7):13
+MyFib(8):21
+MyFib(9):34
+MyFib(10):55
+
+
+Makefike Example 1 with -mem:
+
+
+
+valgrind ./myMain
+==4996== Memcheck, a memory error detector
+==4996== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==4996== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
+==4996== Command: ./myMain
+==4996== 
+CMPE380 Makefile Example!
+MyFib(0):0
+MyFib(1):1
+MyFib(2):1
+MyFib(3):2
+MyFib(4):3
+MyFib(5):5
+MyFib(6):8
+MyFib(7):13
+MyFib(8):21
+MyFib(9):34
+MyFib(10):55
+==4996== 
+==4996== HEAP SUMMARY:
+==4996==     in use at exit: 0 bytes in 0 blocks
+==4996==   total heap usage: 0 allocs, 0 frees, 0 bytes allocated
+==4996== 
+==4996== All heap blocks were freed -- no leaks are possible
+==4996== 
+==4996== For counts of detected and suppressed errors, rerun with: -v
+==4996== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+
+
+Interactive Exercises:
+
+For the interactive exercises, we were given a makefile, "Makefile2." Given 
+that file, we had to run make all, check the output for verification then run
+make mem to verify no leaks, then clean and rebuild then run the program 
+again. The results are provided below. 
+
+
+
+Makefile with all:
+gcc -g -o myMain myMain.o myFunctions.o
+gcc -g -o myMain myMain.o myFunctions.o -I.
+
+
+Makefile 2 with -mem:
+
+valgrind ./myMain
+==29381== Memcheck, a memory error detector
+==29381== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==29381== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
+==29381== Command: ./myMain
+==29381== 
+CMPE380 Makefile Example!
+MyFib(0):0
+MyFib(1):1
+MyFib(2):1
+MyFib(3):2
+MyFib(4):3
+MyFib(5):5
+MyFib(6):8
+MyFib(7):13
+MyFib(8):21
+MyFib(9):34
+MyFib(10):55
+==29381== 
+==29381== HEAP SUMMARY:
+==29381==     in use at exit: 0 bytes in 0 blocks
+==29381==   total heap usage: 0 allocs, 0 frees, 0 bytes allocated
+==29381== 
+==29381== All heap blocks were freed -- no leaks are possible
+==29381== 
+==29381== For counts of detected and suppressed errors, rerun with: -v
+==29381== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+
+Makefile2 with clean:
+
+rm -f myMain myMain.o
+
+Makefile2 rebuilt:
+
+gcc -g -c -o myMain.o myMain.c -I.
+gcc -g -o myMain myMain.o myFunctions.o -I.
+
+Makefile2 reran with valgrind:
+valgrind ./myMain
+==29438== Memcheck, a memory error detector
+==29438== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==29438== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
+==29438== Command: ./myMain
+==29438== 
+CMPE380 Makefile Example!
+MyFib(0):0
+MyFib(1):1
+MyFib(2):1
+MyFib(3):2
+MyFib(4):3
+MyFib(5):5
+MyFib(6):8
+MyFib(7):13
+MyFib(8):21
+MyFib(9):34
+MyFib(10):55
+==29438== 
+==29438== HEAP SUMMARY:
+==29438==     in use at exit: 0 bytes in 0 blocks
+==29438==   total heap usage: 0 allocs, 0 frees, 0 bytes allocated
+==29438== 
+==29438== All heap blocks were freed -- no leaks are possible
+==29438== 
+==29438== For counts of detected and suppressed errors, rerun with: -v
+==29438== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+
+
+For Makefile example 3, it was assumed that we were working inside an 
+enterprise level C project where all include and object files are in different
+directories. We were provided with a src, lib, and inc directories. First in 
+the src directory where the makefile we're working with is located we had to
+run the makefile with make all and enusre that all object files and the final output are in place. Then run a makeclean to ensure that all the object
+files and the output are deleted, which they were. Then I ran make mem to 
+verify that everything is working and that there were no issues. Next were 
+tasked with removing the myFunctions.o file. Then run make all to see which 
+files would be built. The only thing that gcc was being run for myFunctions.c
+and its objects. Then I ran make clean, then make all. This whole process was 
+to introduce to us an easier way to make an automated build process with a 
+Makefile. 
+
+Assginment:
+
+For the assignment portion of the lab, were tasked with implementing two 
+functions, 1 in LinkedLists.c and 1 in DynamicArrays.c. Both were fairly 
+simple. Interate through the DArray or LinkedList and if the string of the 
+current string doesn't equal the requested string, keep iterating. If you get
+to end of the DArray or LinkedList and nothing came up as a match return null, 
+else return the string that matched the requested string. 
+
+Then after the two fucntions were implemented, then I proceeded to implement
+the makefile.
+
+It was fairly simple. I made several macros to simplify the make files. I had 
+macros for the sources files included: TestSearch.c, LinkedLists.c, and 
+DynamicArrays.c. Then I had macros for each of the sources files without the 
+.c part. Those were my programs files. I had output file macros for the 
+out.txt and mem.txt used for test and valgrind respectively. Then I had
+for the compiler string and one for the c flags. My last set of macros were 
+used for valgrind, one for the word valgrind and another for the flags set 
+valgrind. 
+
+There are 6 targets: all, TestSearch, searchword, mem, help, and clean. 
+all depended on TestSearch which builds the TestSearch objects and excutables
+with LinkedLists.c, DynamicArrays.c, and TestSearch.c as its components. 
+searchword has the same components as TestSearch. It runs the testsearch 
+executable with the file engWords.txt and the word "space" passed into it. The
+output of that is appended to created file named out.txt. mem runs the 
+TestSearch executable with the macros flags and appends the output to a 
+created file named mem.txt. Help shows all the options of the makefile 
+except TestSearch because all will call that anyway. Then clean does its 
+normal  fucntion and removes the object and text files created from the 
+makefile.    

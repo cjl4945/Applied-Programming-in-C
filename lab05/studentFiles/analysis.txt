@@ -1,0 +1,28 @@
+Analysis
+
+
+
+The way I implemented the LinkedList.c file is I first started off with Initializing the
+linked list. First I set number of elements to 0, the front pointer to null and the back
+pointer to null. Then i implemented the addtobackoflinkedlist. For that I first 
+initiialized a newnode, which is the newnode to be passed in. The new node's next is set 
+to null. Its previous is set the the back pointer. Then i set the new node as the back 
+pointer. Then I declared an if statemetn saying, if the linked is empty set the front 
+pointer to the new node, else set the the next of the new node's previous to the new 
+node. Then I increment the number of elements. 
+
+Then I implemented the remove function. First I started with a if the number of elements
+is 0, then return NULL. Then I proceeded a if stating if the front pointer and the
+back pointer don't equal each then set the front pointer to the front pointer's next
+then set the front pointer's previous to NULL. Else if the front pointer and back
+pointer eqaul each then set the front pointer and the back pointer to NULL. Then at the
+end of everything I return the data of the front pointer node. 
+
+Lastly the destroy the linked list was implemented. I used a for loop go through the 
+linked list seting the front pointer node to it's next. Then decrementing the number 
+elements and free the node that was just destroyed. If the Front ptr is null, then
+the the program will break out of the for loop. And I set the Front pointer node's
+previous to null.   
+
+
+

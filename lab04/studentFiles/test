@@ -1,0 +1,8 @@
+#############################################################################
+# Simple script to run tests
+#############################################################################
+./TestDarray  engWords.txt       > out.txt 2>&1
+#/TestDarray shortWords.txt      > out.txt 2>&1
+#/TestDarray veryShortWords.txt  > out.txt 2>&1
+cat out.txt
+
