@@ -1,0 +1,25 @@
+Advanced Examples
+
+
+1. This creates a use menu to run specific taks. The script allows the users
+to open the nano editor, show current files in directory, gcc a c file, and 
+exit. 
+
+2. This program uses a case selection by reading in the input of the user 
+and based on their selection, a specific case is selected and executed.
+The bash uses linux commands to run specific tasks, like ls -la is ran inside
+of the script depending on if it's case was selected. Break is used to exit
+the while loop, which will continue to run because the while loop is executed
+as long as the variable continue is true. The command clean is called to wipe
+everything on the screen away.  
+
+
+3. This script goes the all the files in the current directory and counts the number
+of files and the number of lines in each file. It then prints out the lines for each 
+file, then the total files and total lines for all files combined together. 
+
+4. The command wc -l is used which is used to get the number of lines in the
+current file. The word local with a variable names. It makes the variable name have a 
+visible scope restricted to that function and its children only. Instead of writing 
+the word function for functions, it was simplified by using parathesis after the 
+function name instead of writing the word function before the function name. 
