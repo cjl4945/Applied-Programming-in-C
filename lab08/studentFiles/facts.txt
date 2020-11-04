@@ -1,0 +1,599 @@
+sizes:
+
+
+hw8c_0  :
+section              size      addr
+.interp                28   4194872
+.note.ABI-tag          32   4194900
+.note.gnu.build-id     36   4194932
+.gnu.hash              36   4194968
+.dynsym               360   4195008
+.dynstr               145   4195368
+.gnu.version           30   4195514
+.gnu.version_r         48   4195544
+.rela.dyn              48   4195592
+.rela.plt             312   4195640
+.init                  26   4195952
+.plt                  224   4195984
+.text                2786   4196208
+.fini                   9   4198996
+.rodata               688   4199008
+.eh_frame_hdr          68   4199696
+.eh_frame             308   4199768
+.init_array             8   6299152
+.fini_array             8   6299160
+.jcr                    8   6299168
+.dynamic              464   6299176
+.got                    8   6299640
+.got.plt              128   6299648
+.data                   4   6299776
+.bss                   16   6299784
+.comment               45         0
+.debug_aranges         48         0
+.debug_info          1342         0
+.debug_abbrev         315         0
+.debug_line           630         0
+.debug_str            820         0
+Total                9028
+
+
+hw8c  :
+section               size      addr
+.interp                 28   4194872
+.note.ABI-tag           32   4194900
+.note.gnu.build-id      36   4194932
+.gnu.hash               36   4194968
+.dynsym                336   4195008
+.dynstr                138   4195344
+.gnu.version            28   4195482
+.gnu.version_r          48   4195512
+.rela.dyn               48   4195560
+.rela.plt              288   4195608
+.init                   26   4195896
+.plt                   208   4195936
+.text                 1458   4196144
+.fini                    9   4197604
+.rodata                496   4197616
+.eh_frame_hdr           68   4198112
+.eh_frame              364   4198184
+.init_array              8   6299152
+.fini_array              8   6299160
+.jcr                     8   6299168
+.dynamic               464   6299176
+.got                     8   6299640
+.got.plt               120   6299648
+.data                    4   6299768
+.bss                    16   6299776
+.comment                45         0
+.debug_aranges          48         0
+.debug_info           2447         0
+.debug_abbrev          539         0
+.debug_line            421         0
+.debug_str             908         0
+.debug_loc            2322         0
+Total                11013
+
+
+hw8c_2  :
+section               size      addr
+.interp                 28   4194872
+.note.ABI-tag           32   4194900
+.note.gnu.build-id      36   4194932
+.gnu.hash               36   4194968
+.dynsym                336   4195008
+.dynstr                138   4195344
+.gnu.version            28   4195482
+.gnu.version_r          48   4195512
+.rela.dyn               48   4195560
+.rela.plt              288   4195608
+.init                   26   4195896
+.plt                   208   4195936
+.text                 1474   4196144
+.fini                    9   4197620
+.rodata                496   4197632
+.eh_frame_hdr           68   4198128
+.eh_frame              412   4198200
+.init_array              8   6299152
+.fini_array              8   6299160
+.jcr                     8   6299168
+.dynamic               464   6299176
+.got                     8   6299640
+.got.plt               120   6299648
+.data                    4   6299768
+.bss                    16   6299776
+.comment                45         0
+.debug_aranges          64         0
+.debug_info           2452         0
+.debug_abbrev          545         0
+.debug_line            496         0
+.debug_str             908         0
+.debug_loc            2553         0
+.debug_ranges           48         0
+Total                11458
+
+
+hw8c_3  :
+section               size      addr
+.interp                 28   4194872
+.note.ABI-tag           32   4194900
+.note.gnu.build-id      36   4194932
+.gnu.hash               36   4194968
+.dynsym                336   4195008
+.dynstr                138   4195344
+.gnu.version            28   4195482
+.gnu.version_r          48   4195512
+.rela.dyn               48   4195560
+.rela.plt              288   4195608
+.init                   26   4195896
+.plt                   208   4195936
+.text                 1826   4196144
+.fini                    9   4197972
+.rodata                496   4197984
+.eh_frame_hdr           68   4198480
+.eh_frame              420   4198552
+.init_array              8   6299152
+.fini_array              8   6299160
+.jcr                     8   6299168
+.dynamic               464   6299176
+.got                     8   6299640
+.got.plt               120   6299648
+.data                    4   6299768
+.bss                    16   6299776
+.comment                45         0
+.debug_aranges          64         0
+.debug_info           2813         0
+.debug_abbrev          621         0
+.debug_line            592         0
+.debug_str             908         0
+.debug_loc            4436         0
+.debug_ranges          240         0
+Total                14426
+
+
+hw8c_opt1_0  :
+section              size      addr
+.interp                28   4194872
+.note.ABI-tag          32   4194900
+.note.gnu.build-id     36   4194932
+.gnu.hash              36   4194968
+.dynsym               384   4195008
+.dynstr               153   4195392
+.gnu.version           32   4195546
+.gnu.version_r         48   4195584
+.rela.dyn              48   4195632
+.rela.plt             336   4195680
+.init                  26   4196016
+.plt                  240   4196048
+.text                2562   4196288
+.fini                   9   4198852
+.rodata               688   4198864
+.eh_frame_hdr          68   4199552
+.eh_frame             308   4199624
+.init_array             8   6299152
+.fini_array             8   6299160
+.jcr                    8   6299168
+.dynamic              464   6299176
+.got                    8   6299640
+.got.plt              136   6299648
+.data                   4   6299784
+.bss                   16   6299792
+.comment               45         0
+.debug_aranges         48         0
+.debug_info          1285         0
+.debug_abbrev         315         0
+.debug_line           594         0
+.debug_str            806         0
+Total                8779
+
+
+hw8c_opt1  :
+section               size      addr
+.interp                 28   4194872
+.note.ABI-tag           32   4194900
+.note.gnu.build-id      36   4194932
+.gnu.hash               36   4194968
+.dynsym                360   4195008
+.dynstr                146   4195368
+.gnu.version            30   4195514
+.gnu.version_r          48   4195544
+.rela.dyn               48   4195592
+.rela.plt              312   4195640
+.init                   26   4195952
+.plt                   224   4195984
+.text                 1314   4196208
+.fini                    9   4197524
+.rodata                496   4197536
+.eh_frame_hdr           68   4198032
+.eh_frame              340   4198104
+.init_array              8   6299152
+.fini_array              8   6299160
+.jcr                     8   6299168
+.dynamic               464   6299176
+.got                     8   6299640
+.got.plt               128   6299648
+.data                    4   6299776
+.bss                    16   6299784
+.comment                45         0
+.debug_aranges          48         0
+.debug_info           2305         0
+.debug_abbrev          539         0
+.debug_line            397         0
+.debug_str             902         0
+.debug_loc            2045         0
+Total                10478
+
+
+hw8c_opt1_2  :
+section               size      addr
+.interp                 28   4194872
+.note.ABI-tag           32   4194900
+.note.gnu.build-id      36   4194932
+.gnu.hash               36   4194968
+.dynsym                360   4195008
+.dynstr                146   4195368
+.gnu.version            30   4195514
+.gnu.version_r          48   4195544
+.rela.dyn               48   4195592
+.rela.plt              312   4195640
+.init                   26   4195952
+.plt                   224   4195984
+.text                 1314   4196208
+.fini                    9   4197524
+.rodata                496   4197536
+.eh_frame_hdr           68   4198032
+.eh_frame              340   4198104
+.init_array              8   6299152
+.fini_array              8   6299160
+.jcr                     8   6299168
+.dynamic               464   6299176
+.got                     8   6299640
+.got.plt               128   6299648
+.data                    4   6299776
+.bss                    16   6299784
+.comment                45         0
+.debug_aranges          64         0
+.debug_info           2303         0
+.debug_abbrev          543         0
+.debug_line            466         0
+.debug_str             902         0
+.debug_loc            2196         0
+.debug_ranges           48         0
+Total                10764
+
+
+hw8c_opt1_3  :
+section               size      addr
+.interp                 28   4194872
+.note.ABI-tag           32   4194900
+.note.gnu.build-id      36   4194932
+.gnu.hash               36   4194968
+.dynsym                360   4195008
+.dynstr                146   4195368
+.gnu.version            30   4195514
+.gnu.version_r          48   4195544
+.rela.dyn               48   4195592
+.rela.plt              312   4195640
+.init                   26   4195952
+.plt                   224   4195984
+.text                 1538   4196208
+.fini                    9   4197748
+.rodata                496   4197760
+.eh_frame_hdr           68   4198256
+.eh_frame              348   4198328
+.init_array              8   6299152
+.fini_array              8   6299160
+.jcr                     8   6299168
+.dynamic               464   6299176
+.got                     8   6299640
+.got.plt               128   6299648
+.data                    4   6299776
+.bss                    16   6299784
+.comment                45         0
+.debug_aranges          64         0
+.debug_info           2583         0
+.debug_abbrev          636         0
+.debug_line            539         0
+.debug_str             902         0
+.debug_loc            3450         0
+.debug_ranges          192         0
+Total                12840
+
+
+hw8c_opt2_0  :
+section              size      addr
+.interp                28   4194872
+.note.ABI-tag          32   4194900
+.note.gnu.build-id     36   4194932
+.gnu.hash              36   4194968
+.dynsym               360   4195008
+.dynstr               145   4195368
+.gnu.version           30   4195514
+.gnu.version_r         48   4195544
+.rela.dyn              48   4195592
+.rela.plt             312   4195640
+.init                  26   4195952
+.plt                  224   4195984
+.text                3026   4196208
+.fini                   9   4199236
+.rodata               744   4199248
+.eh_frame_hdr          68   4199992
+.eh_frame             308   4200064
+.init_array             8   6299152
+.fini_array             8   6299160
+.jcr                    8   6299168
+.dynamic              464   6299176
+.got                    8   6299640
+.got.plt              128   6299648
+.data                   4   6299776
+.bss                   16   6299784
+.comment               45         0
+.debug_aranges         48         0
+.debug_info          1342         0
+.debug_abbrev         315         0
+.debug_line           666         0
+.debug_str            825         0
+Total                9365
+
+
+hw8c_opt2  :
+section               size      addr
+.interp                 28   4194872
+.note.ABI-tag           32   4194900
+.note.gnu.build-id      36   4194932
+.gnu.hash               36   4194968
+.dynsym                336   4195008
+.dynstr                138   4195344
+.gnu.version            28   4195482
+.gnu.version_r          48   4195512
+.rela.dyn               48   4195560
+.rela.plt              288   4195608
+.init                   26   4195896
+.plt                   208   4195936
+.text                 1522   4196144
+.fini                    9   4197668
+.rodata                552   4197680
+.eh_frame_hdr           68   4198232
+.eh_frame              364   4198304
+.init_array              8   6299152
+.fini_array              8   6299160
+.jcr                     8   6299168
+.dynamic               464   6299176
+.got                     8   6299640
+.got.plt               120   6299648
+.data                    4   6299768
+.bss                    16   6299776
+.comment                45         0
+.debug_aranges          48         0
+.debug_info           2478         0
+.debug_abbrev          539         0
+.debug_line            450         0
+.debug_str             913         0
+.debug_loc            2377         0
+Total                11253
+
+
+hw8c_opt2_2  :
+section               size      addr
+.interp                 28   4194872
+.note.ABI-tag           32   4194900
+.note.gnu.build-id      36   4194932
+.gnu.hash               36   4194968
+.dynsym                336   4195008
+.dynstr                138   4195344
+.gnu.version            28   4195482
+.gnu.version_r          48   4195512
+.rela.dyn               48   4195560
+.rela.plt              288   4195608
+.init                   26   4195896
+.plt                   208   4195936
+.text                 1538   4196144
+.fini                    9   4197684
+.rodata                552   4197696
+.eh_frame_hdr           68   4198248
+.eh_frame              412   4198320
+.init_array              8   6299152
+.fini_array              8   6299160
+.jcr                     8   6299168
+.dynamic               464   6299176
+.got                     8   6299640
+.got.plt               120   6299648
+.data                    4   6299768
+.bss                    16   6299776
+.comment                45         0
+.debug_aranges          64         0
+.debug_info           2483         0
+.debug_abbrev          545         0
+.debug_line            551         0
+.debug_str             913         0
+.debug_loc            2629         0
+.debug_ranges           48         0
+Total                11745
+
+
+hw8c_opt2_3  :
+section               size      addr
+.interp                 28   4194872
+.note.ABI-tag           32   4194900
+.note.gnu.build-id      36   4194932
+.gnu.hash               36   4194968
+.dynsym                336   4195008
+.dynstr                138   4195344
+.gnu.version            28   4195482
+.gnu.version_r          48   4195512
+.rela.dyn               48   4195560
+.rela.plt              288   4195608
+.init                   26   4195896
+.plt                   208   4195936
+.text                 1954   4196144
+.fini                    9   4198100
+.rodata                552   4198112
+.eh_frame_hdr           68   4198664
+.eh_frame              420   4198736
+.init_array              8   6299152
+.fini_array              8   6299160
+.jcr                     8   6299168
+.dynamic               464   6299176
+.got                     8   6299640
+.got.plt               120   6299648
+.data                    4   6299768
+.bss                    16   6299776
+.comment                45         0
+.debug_aranges          64         0
+.debug_info           2844         0
+.debug_abbrev          621         0
+.debug_line            664         0
+.debug_str             913         0
+.debug_loc            4512         0
+.debug_ranges          240         0
+Total                14794
+
+
+hw8c_opt3_0  :
+section              size      addr
+.interp                28   4194872
+.note.ABI-tag          32   4194900
+.note.gnu.build-id     36   4194932
+.gnu.hash              36   4194968
+.dynsym               360   4195008
+.dynstr               145   4195368
+.gnu.version           30   4195514
+.gnu.version_r         48   4195544
+.rela.dyn              48   4195592
+.rela.plt             312   4195640
+.init                  26   4195952
+.plt                  224   4195984
+.text                3058   4196208
+.fini                   9   4199268
+.rodata               744   4199280
+.eh_frame_hdr          68   4200024
+.eh_frame             308   4200096
+.init_array             8   6299152
+.fini_array             8   6299160
+.jcr                    8   6299168
+.dynamic              464   6299176
+.got                    8   6299640
+.got.plt              128   6299648
+.data                   4   6299776
+.bss                   16   6299784
+.comment               45         0
+.debug_aranges         48         0
+.debug_info          1401         0
+.debug_abbrev         315         0
+.debug_line           670         0
+.debug_str            847         0
+Total                9482
+
+
+hw8c_opt3  :
+section               size      addr
+.interp                 28   4194872
+.note.ABI-tag           32   4194900
+.note.gnu.build-id      36   4194932
+.gnu.hash               36   4194968
+.dynsym                336   4195008
+.dynstr                138   4195344
+.gnu.version            28   4195482
+.gnu.version_r          48   4195512
+.rela.dyn               48   4195560
+.rela.plt              288   4195608
+.init                   26   4195896
+.plt                   208   4195936
+.text                 1474   4196144
+.fini                    9   4197620
+.rodata                552   4197632
+.eh_frame_hdr           68   4198184
+.eh_frame              364   4198256
+.init_array              8   6299152
+.fini_array              8   6299160
+.jcr                     8   6299168
+.dynamic               464   6299176
+.got                     8   6299640
+.got.plt               120   6299648
+.data                    4   6299768
+.bss                    16   6299776
+.comment                45         0
+.debug_aranges          48         0
+.debug_info           2522         0
+.debug_abbrev          552         0
+.debug_line            430         0
+.debug_str             935         0
+.debug_loc            2301         0
+Total                11188
+
+
+hw8c_opt3_2  :
+section               size      addr
+.interp                 28   4194872
+.note.ABI-tag           32   4194900
+.note.gnu.build-id      36   4194932
+.gnu.hash               36   4194968
+.dynsym                336   4195008
+.dynstr                138   4195344
+.gnu.version            28   4195482
+.gnu.version_r          48   4195512
+.rela.dyn               48   4195560
+.rela.plt              288   4195608
+.init                   26   4195896
+.plt                   208   4195936
+.text                 1490   4196144
+.fini                    9   4197636
+.rodata                552   4197648
+.eh_frame_hdr           68   4198200
+.eh_frame              412   4198272
+.init_array              8   6299152
+.fini_array              8   6299160
+.jcr                     8   6299168
+.dynamic               464   6299176
+.got                     8   6299640
+.got.plt               120   6299648
+.data                    4   6299768
+.bss                    16   6299776
+.comment                45         0
+.debug_aranges          64         0
+.debug_info           2527         0
+.debug_abbrev          558         0
+.debug_line            504         0
+.debug_str             935         0
+.debug_loc            2534         0
+.debug_ranges           48         0
+Total                11634
+
+
+hw8c_opt3_3  :
+section               size      addr
+.interp                 28   4194872
+.note.ABI-tag           32   4194900
+.note.gnu.build-id      36   4194932
+.gnu.hash               36   4194968
+.dynsym                336   4195008
+.dynstr                138   4195344
+.gnu.version            28   4195482
+.gnu.version_r          48   4195512
+.rela.dyn               48   4195560
+.rela.plt              288   4195608
+.init                   26   4195896
+.plt                   208   4195936
+.text                 1858   4196144
+.fini                    9   4198004
+.rodata                552   4198016
+.eh_frame_hdr           68   4198568
+.eh_frame              420   4198640
+.init_array              8   6299152
+.fini_array              8   6299160
+.jcr                     8   6299168
+.dynamic               464   6299176
+.got                     8   6299640
+.got.plt               120   6299648
+.data                    4   6299768
+.bss                    16   6299776
+.comment                45         0
+.debug_aranges          64         0
+.debug_info           2928         0
+.debug_abbrev          628         0
+.debug_line            602         0
+.debug_str             935         0
+.debug_loc            4398         0
+.debug_ranges          240         0
+Total                14635
+
+

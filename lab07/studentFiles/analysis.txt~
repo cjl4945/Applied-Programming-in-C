@@ -1,0 +1,27 @@
+Analysis
+
+For the prelab there were two parts. The first part was a a macro that takes
+in value to stop the macro. In the lab07a.c, 3 was the number passed into the 
+macro. What the macro does, is it starts at 0 cubes that number and adds it
+to the sum of 0, and 0 cubed is zero. Then it does the same with 1, 1 cubed is
+1. Now the sum is 1. Then 2 is cubed, 2 cube is 8 which is now added to the
+sum of 1. Now the sum is 9. 0,1,9 were the numbers that were printed out. 
+
+The second part of the prelab was demonstartion of the 2-d array and how to
+access them. The file lab07b.c initializes a 2-d array with 15 random
+integers in it. Then after the initialization, different indexing methods are
+tested.
+
+In the interactive exercises, the macro example 2 didn't build  because there
+needed an opening and closing brackets at the beginning and end of the macro 
+and the last print statement of the macro need a semicolon. It printed out 5 
+and 10 onto the console. This wasn't the solution that this program originally
+needed, but since I changed the scope of the macro where if begins at the 
+opening the brackets and the end of brackets.   
+
+macro example 3
+
+
+macro example 4 
+
+macro example 5 

@@ -1,0 +1,164 @@
+Analysis
+
+For the prelab there were two parts. The first part was a a macro that takes
+in value to stop the macro. In the lab07a.c, 3 was the number passed into the 
+macro. What the macro does, is it starts at 0 cubes that number and adds it
+to the sum of 0, and 0 cubed is zero. Then it does the same with 1, 1 cubed is
+1. Now the sum is 1. Then 2 is cubed, 2 cube is 8 which is now added to the
+sum of 1. Now the sum is 9. 0,1,9 were the numbers that were printed out. 
+
+The second part of the prelab was demonstartion of the 2-d array and how to
+access them. The file lab07b.c initializes a 2-d array with 15 random
+integers in it. Then after the initialization, different indexing methods are
+tested.
+
+In the interactive exercises, the macro example 2 didn't build  because there
+needed an opening and closing brackets at the beginning and end of the macro 
+and the last print statement of the macro need a semicolon. It printed out 5 
+and 10 onto the console. This wasn't the solution that this program originally
+needed, but since I changed the scope of the macro where if begins at the 
+opening the brackets and the end of brackets.   
+
+MACRO Example 3:
+The n in the macro need to be in parenthesises itself becuase it seems
+that the program took premdas into consideration. It seemed to multiply 5 and
+5 together first instead of of add the 5 and 5 first.
+
+MULTIPLY: 50
+
+MACRO Example 4:
+
+I think the output will result in x = -5 and abs = 4
+
+RESULT: 4
+X IS: -3
+
+The macro has two instructions inside of it. So when -5 gets passed it, it
+turns abs into 4 and x not equals -4, then on the return x is then increased
+again to change x to -3
+
+DYNAMIC 2d Array Example:
+
+
+The code malloc space for each row, them calloc space for each column.
+Then it begins populating the 2d array with random integers from 0-99.
+Then prints out the each element at each index of the 2d array.
+
+It doesn't seem to have any issues with the program.
+
+There is 144 bytes of memory that have been leaked
+
+
+No, free(A) won't do the trick because you must free all the space allocated
+for each the columns in the row, then the free the row.
+
+83.000000	86.000000	77.000000	15.000000	93.000000
+35.000000	86.000000	92.000000	49.000000	21.000000
+62.000000	27.000000	90.000000	59.000000	63.000000
+
+Assignment:
+
+For the assignment portion of the lab, we first had to finish off some of
+macros in the Timers.h file. The macros that needed to implemented were
+PRINT_RTIMER, PRINT_TIMER, BEGIN_REPEAT_TIMING, END_REPEAT_TIMING, and 
+DECLARE_REPEAT_VAR. After these, the hw7c.c and hw7cpp.cpp files need to be 
+updated to measure and report execution time of data input and calculations 
+separately. In both files we had to initialize the timers for data input and 
+calculations then start the timers and their loops, stop the timers, stop the
+timer loops, then print the results of the execution time. There were some 
+execution time test that were provided to test the programs after compiling 
+them. Below is the following reuslts for the 8 test we had to run. Each test
+was excuted 5 times and averaged out.
+
+Testing Matrix:
+
+Test 1 with no MOVE_IO_CLOSE option:
+Data Elapsed Time: 1.81 sec. 
+Data Elapsed Time per iteration: 0.0181 sec.
+Calculation Time: .14 sec
+Calculation Time per iteration: 7e-06 sec.
+
+Test 2 with no MOVE_IO_CLOSE option and 2x the loop count of #1:
+Data Elapsed Time: 3.55 sec.
+Data Elapsed Time per iteration: 0.0178	sec.
+Calculation Time: .27 sec
+Calculation Time per iteration:	6.75e-06 sec.
+
+I guess it's obvious that the total elapsed time will be greater when you 
+the iteration loops. The time per iteration was actaully less than when 
+the loop was doubled. So it can be concluded that the more iterations there 
+are, the more efficient the program runs
+
+
+
+
+Test 3 with MOVE_IO_CLOSE option:
+Data Elapsed Time: 1.88 sec.
+Data Elapsed Time per iteration: 0.0188 sec.
+Calculation Time: .13 sec
+Calculation Time per iteration: 6.5e-06 sec.
+
+Test 4 with MOVE_IO_CLOSE option and 2x the loop count of #3:
+Data Elapsed Time: 3.88 sec.
+Data Elapsed Time per iteration: 0.0194 sec.
+Calculation Time: .28 sec
+Calculation Time per iteration: 7e-06 sec.
+
+For these two tests, the exact thing most will expect happened, the total 
+time and time per loop was greater with the MOVE_IO_CLOSE option and doubling
+the iteration loops. 
+
+
+Test 5 with no MOVE_IO_CLOSE option:
+Data Elapsed Time: 0 sec.
+Data Elapsed Time per iteration: 0 sec.
+Calculation Time: .01 sec
+Calculation Time per iteration: 5e-07 sec.
+
+Test 6 with no MOVE_IO_CLOSE option and 2x the loop count of #1:
+Data Elapsed Time: 0 sec.
+Data Elapsed Time per iteration: 0 sec.
+Calculation Time: .01 sec
+Calculation Time per iteration: 2.5e-07 sec.
+
+It seems that the no MOVE_IO_CLOSE makes the program run longer. Similar to 
+test 1 and 2, the the total time increased for test 6, but the per loop 
+performance was better in test 6 than 5. It's a bit weird that the expected
+results didn't get the 0 for the calculation times. But that were near 0 so I
+wouldn't say that the my program results deviated much. 
+
+
+
+Test 7 with MOVE_IO_CLOSE option:
+Data Elapsed Time: .5 sec.
+Data Elapsed Time per iteration: 0.005 sec.
+Calculation Time: 6.5 sec
+Calculation Time per iteration: 3.25e-04 sec.
+
+Test 8 with MOVE_IO_CLOSE option and 2x the loop count of #3:
+Data Elapsed Time: .91 sec.
+Data Elapsed Time per iteration: 0.00455 sec.
+Calculation Time: 13.33 sec
+Calculation Time per iteration: .00033325 sec.
+
+These results were bit weird just becuase the total time was greater after
+increasing the loops. The per loop performance was less in test 8 than test 7
+for the data, but the calculation measurement test 7 was less than test 8. 
+The total elasped time for the calculation deviated immensely from the 
+expected results. I'm not really sure what the problem was. 
+
+
+Lastly is the makefile file that had four options: all, test, help, and clean.
+Help and clean do their normal functions. For make all, I have the makefile
+build 8 executables for. Two were for the c files with the original loop 
+count. One had the MOVE_IO_CLOSE option and one didn't. Another two were for 
+the c files with double the loop, and one with the MOVE_IO_CLOSE option and 
+the another didn't. The next 4 were for the cpp files. I did the same 
+as I did for the c files with doubling the loops and adding and removing 
+the MOVE_IO_CLOSE option. I didn't realize it until late that I didn't have
+to run the 8 tests in my makefile. That's why I built so many executables. 
+Then as I mentioned before about the 8 tests, my test option will test all
+of the excutables for the 8 tests and output them to a text file. That's 
+the end of the makefile.  
+
+

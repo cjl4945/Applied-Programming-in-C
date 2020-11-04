@@ -1,0 +1,41 @@
+hw8c.c:
+total 144
+-rwxr-x--- 1 cjl4945 student 84064 Oct 24 11:17 data.txt
+-rwxrwx--- 1 cjl4945 student 16816 Oct 24 11:29 hw8c
+-rwxr-x--- 1 cjl4945 student  8408 Oct 24 11:18 hw8c.c
+-rw-rw---- 1 cjl4945 student     0 Oct 24 11:30 ls.txt
+-rw-rw---- 1 cjl4945 student  1518 Oct 24 11:27 out.txt
+-rwxr-xr-x 1 cjl4945 student 10098 Oct 24 01:09 results.txt
+-rw-rw---- 1 cjl4945 student    28 Oct 24 11:30 size.txt
+-rwxr-x--- 1 cjl4945 student  8071 Oct 24 11:17 Timers.h
+total 152
+-rwxr-x--- 1 cjl4945 student 84064 Oct 24 11:17 data.txt
+-rwxrwx--- 1 cjl4945 student 20392 Oct 24 11:34 hw8c
+-rwxr-x--- 1 cjl4945 student  8408 Oct 24 11:18 hw8c.c
+-rw-rw---- 1 cjl4945 student   460 Oct 24 11:30 ls.txt
+-rw-rw---- 1 cjl4945 student  1518 Oct 24 11:27 out.txt
+-rwxr-xr-x 1 cjl4945 student 10098 Oct 24 01:09 results.txt
+-rw-rw---- 1 cjl4945 student    28 Oct 24 11:30 size.txt
+-rw-rw---- 1 cjl4945 student  1529 Oct 24 11:34 speed.txt
+-rwxr-x--- 1 cjl4945 student  8071 Oct 24 11:17 Timers.h
+total 156
+-rwxr-x--- 1 cjl4945 student 84064 Oct 24 11:17 data.txt
+-rwxrwx--- 1 cjl4945 student 20880 Oct 24 11:41 hw8c
+-rwxr-x--- 1 cjl4945 student  8408 Oct 24 11:18 hw8c.c
+-rw-rw---- 1 cjl4945 student   978 Oct 24 11:35 ls.txt
+-rw-rw---- 1 cjl4945 student  1518 Oct 24 11:27 out.txt
+-rwxr-xr-x 1 cjl4945 student 10098 Oct 24 01:09 results.txt
+-rw-rw---- 1 cjl4945 student  3851 Oct 24 11:41 size.txt
+-rw-rw---- 1 cjl4945 student  2164 Oct 24 11:41 speed.txt
+-rwxr-x--- 1 cjl4945 student  8071 Oct 24 11:17 Timers.h
+total 156
+-rwxr-x--- 1 cjl4945 student 84064 Oct 24 11:17 data.txt
+-rwxrwx--- 1 cjl4945 student 23488 Oct 24 11:43 hw8c
+-rwxr-x--- 1 cjl4945 student  8408 Oct 24 11:18 hw8c.c
+-rw-rw---- 1 cjl4945 student  1496 Oct 24 11:41 ls.txt
+-rw-rw---- 1 cjl4945 student  1518 Oct 24 11:27 out.txt
+-rwxr-xr-x 1 cjl4945 student 10098 Oct 24 01:09 results.txt
+-rw-rw---- 1 cjl4945 student  3851 Oct 24 11:41 size.txt
+-rw-rw---- 1 cjl4945 student  2194 Oct 24 11:43 speed.txt
+-rwxr-x--- 1 cjl4945 student  8071 Oct 24 11:17 Timers.h
+

@@ -1,0 +1,196 @@
+Test -O0:
+Time elapsed (data) = 8.140000 sec.
+Avg Elapsed CPU Time Over 100 iterations (data) = 0.0814 sec.
+Time elapsed (calculation) = 0.650000 sec.
+Avg Elapsed CPU Time Over 20000 iterations (calculation) = 3.25e-05 sec.
+Base code,no performance changes
+The best least square line is: Y = 1.26393 * X + 0.823035
+
+Time elapsed (data) = 8.090000 sec.
+Avg Elapsed CPU Time Over 100 iterations (data) = 0.0809 sec.
+Time elapsed (calculation) = 0.650000 sec.
+Avg Elapsed CPU Time Over 20000 iterations (calculation) = 3.25e-05 sec.
+Base code,no performance changes
+The best least square line is: Y = 1.26393 * X + 0.823035
+
+
+Time elapsed (data) = 10.700000 sec.
+Avg Elapsed CPU Time Over 100 iterations (data) = 0.107 sec.
+Time elapsed (calculation) = 0.640000 sec.
+Avg Elapsed CPU Time Over 20000 iterations (calculation) = 3.2e-05 sec.
+Base code,no performance changes
+The best least square line is: Y = 1.26393 * X + 0.823035
+
+Time elapsed (data) = 10.510000 sec.
+Avg Elapsed CPU Time Over 100 iterations (data) = 0.1051 sec.
+Time elapsed (calculation) = 0.640000 sec.
+Avg Elapsed CPU Time Over 20000 iterations (calculation) = 3.2e-05 sec.
+Base code,no performance changes
+The best least square line is: Y = 1.26393 * X + 0.823035
+
+Time elapsed (data) = 9.370000 sec.
+Avg Elapsed CPU Time Over 100 iterations (data) = 0.0937 sec.
+Time elapsed (calculation) = 0.650000 sec.
+Avg Elapsed CPU Time Over 20000 iterations (calculation) = 3.25e-05 sec.
+Base code,no performance changes
+The best least square line is: Y = 1.26393 * X + 0.823035
+
+AVERAGE:
+Time elapsed (data) = 9.362000 sec.
+Avg Elapsed CPU Time Over 100 iterations (data) = 0.0937 sec.
+Time elapsed (calculation) = 0.646000 sec.
+Avg Elapsed CPU Time Over 20000 iterations (
+calculation) = 3.25e-05 sec.
+Base code,no performance changes
+The best least square line is: Y = 1.26393 * X + 0.823035
+
+Test for -01:
+
+Time elapsed (data) = 1.850000 sec.
+Avg Elapsed CPU Time Over 100 iterations (data) = 0.0185 sec.
+Time elapsed (calculation) = 0.130000 sec.
+Avg Elapsed CPU Time Over 20000 iterations (calculation) = 6.5e-06 sec.
+Base code,no performance changes
+The best least square line is: Y = 1.26393 * X + 0.823035
+
+
+Time elapsed (data) = 1.790000 sec.
+Avg Elapsed CPU Time Over 100 iterations (data) = 0.0179 sec.
+Time elapsed (calculation) = 0.140000 sec.
+Avg Elapsed CPU Time Over 20000 iterations (calculation) = 7e-06 sec.
+Base code,no performance changes
+The best least square line is: Y = 1.26393 * X + 0.823035
+
+Time elapsed (data) = 1.790000 sec.
+Avg Elapsed CPU Time Over 100 iterations (data) = 0.0179 sec.
+Time elapsed (calculation) = 0.140000 sec.
+Avg Elapsed CPU Time Over 20000 iterations (calculation) = 7e-06 sec.
+Base code,no performance changes
+The best least square line is: Y = 1.26393 * X + 0.823035
+
+Time elapsed (data) = 1.800000 sec.
+Avg Elapsed CPU Time Over 100 iterations (data) = 0.018 sec.
+Time elapsed (calculation) = 0.140000 sec.
+Avg Elapsed CPU Time Over 20000 iterations (calculation) = 7e-06 sec.
+Base code,no performance changes
+The best least square line is: Y = 1.26393 * X + 0.823035
+
+Time elapsed (data) = 1.790000 sec.
+Avg Elapsed CPU Time Over 100 iterations (data) = 0.0179 sec.
+Time elapsed (calculation) = 0.140000 sec.
+Avg Elapsed CPU Time Over 20000 iterations (calculation) = 7e-06 sec.
+Base code,no performance changes
+The best least square line is: Y = 1.26393 * X + 0.823035
+
+AVERAGE:
+Time elapsed (data) = 1.790000 sec.
+Avg Elapsed CPU Time Over 100 iterations (data) = 0.0179 sec.
+Time elapsed (calculation) = 0.140000 sec.
+Avg Elapsed CPU Time Over 20000 iterations (calculation) = 7e-06 sec.
+Base code,no performance changes
+The best least square line is: Y = 1.26393 * X + 0.823035
+
+Test -02:
+
+Time elapsed (data) = 1.850000 sec.
+Avg Elapsed CPU Time Over 100 iterations (data) = 0.0185 sec.
+Time elapsed (calculation) = 0.140000 sec.
+Avg Elapsed CPU Time Over 20000 iterations (calculation) = 7e-06 sec.
+Base code,no performance changes
+The best least square line is: Y = 1.26393 * X + 0.823035
+
+Time elapsed (data) = 1.710000 sec.
+Avg Elapsed CPU Time Over 100 iterations (data) = 0.0171 sec.
+Time elapsed (calculation) = 0.140000 sec.
+Avg Elapsed CPU Time Over 20000 iterations (calculation) = 7e-06 sec.
+Base code,no performance changes
+The best least square line is: Y = 1.26393 * X + 0.823035
+
+Time elapsed (data) = 1.660000 sec.
+Avg Elapsed CPU Time Over 100 iterations (data) = 0.0166 sec.
+Time elapsed (calculation) = 0.140000 sec.
+Avg Elapsed CPU Time Over 20000 iterations (calculation) = 7e-06 sec.
+Base code,no performance changes
+The best least square line is: Y = 1.26393 * X + 0.823035
+
+Time elapsed (data) = 1.670000 sec.
+Avg Elapsed CPU Time Over 100 iterations (data) = 0.0167 sec.
+Time elapsed (calculation) = 0.140000 sec.
+Avg Elapsed CPU Time Over 20000 iterations (calculation) = 7e-06 sec.
+Base code,no performance changes
+The best least square line is: Y = 1.26393 * X + 0.823035
+
+Time elapsed (data) = 1.690000 sec.
+Avg Elapsed CPU Time Over 100 iterations (data) = 0.0169 sec.
+Time elapsed (calculation) = 0.140000 sec.
+Avg Elapsed CPU Time Over 20000 iterations (calculation) = 7e-06 sec.
+Base code,no performance changes
+The best least square line is: Y = 1.26393 * X + 0.823035
+
+AVERAGE:
+Time elapsed (data) = 1.690000 sec.
+Avg Elapsed CPU Time Over 100 iterations (data) = 0.0169 sec.
+Time elapsed (calculation) = 0.140000 sec.
+Avg Elapsed CPU Time Over 20000 iterations (calculation) = 7e-06 sec.
+Base code,no performance changes
+The best least square line is: Y = 1.26393 * X + 0.823035
+
+Test -03:
+
+Time elapsed (data) = 1.680000 sec.
+Avg Elapsed CPU Time Over 100 iterations (data) = 0.0168 sec.
+Time elapsed (calculation) = 0.140000 sec.
+Avg Elapsed CPU Time Over 20000 iterations (calculation) = 7e-06 sec.
+Base code,no performance changes
+The best least square line is: Y = 1.26393 * X + 0.823035
+
+Time elapsed (data) = 1.680000 sec.
+Avg Elapsed CPU Time Over 100 iterations (data) = 0.0168 sec.
+Time elapsed (calculation) = 0.140000 sec.
+Avg Elapsed CPU Time Over 20000 iterations (calculation) = 7e-06 sec.
+Base code,no performance changes
+The best least square line is: Y = 1.26393 * X + 0.823035
+
+Time elapsed (data) = 1.770000 sec.
+Avg Elapsed CPU Time Over 100 iterations (data) = 0.0177 sec.
+Time elapsed (calculation) = 0.130000 sec.
+Avg Elapsed CPU Time Over 20000 iterations (calculation) = 6.5e-06 sec.
+Base code,no performance changes
+The best least square line is: Y = 1.26393 * X + 0.823035
+
+Time elapsed (data) = 1.670000 sec.
+Avg Elapsed CPU Time Over 100 iterations (data) = 0.0167 sec.
+Time elapsed (calculation) = 0.140000 sec.
+Avg Elapsed CPU Time Over 20000 iterations (calculation) = 7e-06 sec.
+Base code,no performance changes
+The best least square line is: Y = 1.26393 * X + 0.823035
+
+Time elapsed (data) = 1.660000 sec.
+Avg Elapsed CPU Time Over 100 iterations (data) = 0.0166 sec.
+Time elapsed (calculation) = 0.130000 sec.
+Avg Elapsed CPU Time Over 20000 iterations (calculation) = 6.5e-06 sec.
+Base code,no performance changes
+The best least square line is: Y = 1.26393 * X + 0.823035
+
+AVERAGE:
+Time elapsed (data) = 1.660000 sec.
+Avg Elapsed CPU Time Over 100 iterations (data) = 0.0166 sec.
+Time elapsed (calculation) = 0.130000 sec.
+Avg Elapsed CPU Time Over 20000 iterations (calculation) = 6.5e-06 sec.
+Base code,no performance changes
+The best least square line is: Y = 1.26393 * X + 0.823035
+
+
+
+
+
+Analysis:
+The higher the optimazation, level the faster the program runs 
+as showed with the average time elapsed results. The iterations 
+time and total elapsed time for the data decreased as the 
+optimazation levels increase. The total elapsed time for the 
+calculation portion generally decreased, but remained the same for the
+the -O1 and -O2 optimazation. And the same for the iterations, with 
+the -O1 and -O2 optimazation levels staying the same. The final concensus
+is that the higher optimazation levels results in faster program speeds. 
+

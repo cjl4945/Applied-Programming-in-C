@@ -1,0 +1,47 @@
+Prelab:
+1. The difference in the allocation and deacllocation approaches allocated 
+memory for each row, and inside each row memory was also allocated for each 
+each column. Then to deallocate memory, we went through each column in each 
+row and deallocated the memory, the deallocated the rows. 
+
+Example 1:
+
+Operation 15^2/3 repeated 10000000 times
+** CLOCKS_PER_SEC  is 1000000 ticks/sec
+** Size of clock_t is 8 bytes
+   Total Time = 60000 "clocks ticks"
+   Total Time = 0.060000 [sec]
+   Time per Iteration=6e-09 [sec]
+
+Clocks per second was 1000000.
+The time in clock ticks = 600000
+The time in seconds = 0.06
+
+Timing Example 2:
+
+
+Operation 75=15^2/3 repeated 1 times
+** CLOCKS_PER_SEC  is 1000000 ticks/sec
+
+2.
+
+Operation 75=15^2/3 repeated 10000000 times
+** CLOCKS_PER_SEC  is 1000000 ticks/sec
+** Size of clock_t is 8 bytes
+   Total Time = 50000 "clocks ticks"
+   Total Time = 0.050000 [sec]
+   Time per Iteration=5e-09 [sec]
+
+
+Timing measurement with GNU Linux time:
+
+
+Operation 75=15^2/3 repeated 10000000 times
+** CLOCKS_PER_SEC  is 1000000 ticks/sec
+** Size of clock_t is 8 bytes
+   Total Time = 60000 "clocks ticks"
+   Total Time = 0.060000 [sec]
+   Time per Iteration=6e-09 [sec]
+real 0.06
+user 0.06
+sys 0.00

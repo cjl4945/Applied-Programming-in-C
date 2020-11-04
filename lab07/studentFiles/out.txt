@@ -1,0 +1,64 @@
+hw7c:
+Time elapsed (data) = 1.720000 sec.
+Avg Elapsed CPU Time Over 100 iterations (data) = 0.0172 sec.
+Time elapsed (calculation) = 0.130000 sec.
+Avg Elapsed CPU Time Over 20000 iterations (calculation) = 6.5e-06 sec.
+
+Base code,no performance changes
+The best least square line is: Y = 1.26393 * X + 0.823035
+ 
+hw7c2 :
+Time elapsed (data) = 3.410000 sec.
+Avg Elapsed CPU Time Over 200 iterations (data) = 0.01705 sec.
+Time elapsed (calculation) = 0.270000 sec.
+Avg Elapsed CPU Time Over 40000 iterations (calculation) = 6.75e-06 sec.
+
+Base code,no performance changes
+The best least square line is: Y = 1.26393 * X + 0.823035
+ 
+hw7cm:
+Time elapsed (data) = 1.700000 sec.
+Avg Elapsed CPU Time Over 100 iterations (data) = 0.017 sec.
+Time elapsed (calculation) = 0.130000 sec.
+Avg Elapsed CPU Time Over 20000 iterations (calculation) = 6.5e-06 sec.
+
+Base code,no performance changes
+The best least square line is: Y = 1.26393 * X + 0.823035
+ 
+hw7c2m:
+Time elapsed (data) = 3.390000 sec.
+Avg Elapsed CPU Time Over 200 iterations (data) = 0.01695 sec.
+Time elapsed (calculation) = 0.280000 sec.
+Avg Elapsed CPU Time Over 40000 iterations (calculation) = 7e-06 sec.
+
+Base code,no performance changes
+The best least square line is: Y = 1.26393 * X + 0.823035
+ 
+hw7cpp:
+Time elapsed (data) = 0.000000 sec.
+Avg Elapsed CPU Time Over 100 iterations (data) = 0 sec.
+Time elapsed (calc) = 0.000000 sec.
+Avg Elapsed CPU Time Over 20000 iterations (calc) = 0 sec.
+The best least squares line is: Y = -nan * X + -nan
+ 
+hw7cpp2:
+Time elapsed (data) = 0.000000 sec.
+Avg Elapsed CPU Time Over 200 iterations (data) = 0 sec.
+Time elapsed (calc) = 0.010000 sec.
+Avg Elapsed CPU Time Over 40000 iterations (calc) = 2.5e-07 sec.
+The best least squares line is: Y = -nan * X + -nan
+ 
+hw7cppm:
+Time elapsed (data) = 0.400000 sec.
+Avg Elapsed CPU Time Over 100 iterations (data) = 0.004 sec.
+Time elapsed (calc) = 6.500000 sec.
+Avg Elapsed CPU Time Over 20000 iterations (calc) = 0.000325 sec.
+The best least squares line is: Y = 1.26393 * X + 0.823035
+ 
+hw7cpp2m:
+Time elapsed (data) = 0.810000 sec.
+Avg Elapsed CPU Time Over 200 iterations (data) = 0.00405 sec.
+Time elapsed (calc) = 13.460000 sec.
+Avg Elapsed CPU Time Over 40000 iterations (calc) = 0.0003365 sec.
+The best least squares line is: Y = 1.26393 * X + 0.823035
+ 

@@ -1,0 +1,152 @@
+hw8c_0:
+Time elapsed (data) = 9.930000 sec.
+Avg Elapsed CPU Time Over 100 iterations (data) = 0.0993 sec.
+Time elapsed (calculation) = 0.640000 sec.
+Avg Elapsed CPU Time Over 20000 iterations (calculation) = 3.2e-05 sec.
+
+Base code,no performance changes
+The best least square line is: Y = 1.26393 * X + 0.823035
+ 
+hw8c:
+Time elapsed (data) = 1.750000 sec.
+Avg Elapsed CPU Time Over 100 iterations (data) = 0.0175 sec.
+Time elapsed (calculation) = 0.130000 sec.
+Avg Elapsed CPU Time Over 20000 iterations (calculation) = 6.5e-06 sec.
+
+Base code,no performance changes
+The best least square line is: Y = 1.26393 * X + 0.823035
+ 
+hw8c_2:
+Time elapsed (data) = 1.600000 sec.
+Avg Elapsed CPU Time Over 100 iterations (data) = 0.016 sec.
+Time elapsed (calculation) = 0.130000 sec.
+Avg Elapsed CPU Time Over 20000 iterations (calculation) = 6.5e-06 sec.
+
+Base code,no performance changes
+The best least square line is: Y = 1.26393 * X + 0.823035
+ 
+hw8c_3:
+Time elapsed (data) = 1.640000 sec.
+Avg Elapsed CPU Time Over 100 iterations (data) = 0.0164 sec.
+Time elapsed (calculation) = 0.130000 sec.
+Avg Elapsed CPU Time Over 20000 iterations (calculation) = 6.5e-06 sec.
+
+Base code,no performance changes
+The best least square line is: Y = 1.26393 * X + 0.823035
+ 
+hw8c_opt1_0:
+Time elapsed (data) = 0.190000 sec.
+Avg Elapsed CPU Time Over 100 iterations (data) = 0.0019 sec.
+Time elapsed (calculation) = 0.670000 sec.
+Avg Elapsed CPU Time Over 20000 iterations (calculation) = 3.35e-05 sec.
+
+Base code,no performance changes
+The best least square line is: Y = 1.26393 * X + 0.823035
+ 
+hw8c_opt1:
+Time elapsed (data) = 0.200000 sec.
+Avg Elapsed CPU Time Over 100 iterations (data) = 0.002 sec.
+Time elapsed (calculation) = 0.160000 sec.
+Avg Elapsed CPU Time Over 20000 iterations (calculation) = 8e-06 sec.
+
+Base code,no performance changes
+The best least square line is: Y = 1.26393 * X + 0.823035
+ 
+hw8c_opt1_2:
+Time elapsed (data) = 0.190000 sec.
+Avg Elapsed CPU Time Over 100 iterations (data) = 0.0019 sec.
+Time elapsed (calculation) = 0.140000 sec.
+Avg Elapsed CPU Time Over 20000 iterations (calculation) = 7e-06 sec.
+
+Base code,no performance changes
+The best least square line is: Y = 1.26393 * X + 0.823035
+ 
+hw8c_opt1_3:
+Time elapsed (data) = 0.190000 sec.
+Avg Elapsed CPU Time Over 100 iterations (data) = 0.0019 sec.
+Time elapsed (calculation) = 0.170000 sec.
+Avg Elapsed CPU Time Over 20000 iterations (calculation) = 8.5e-06 sec.
+
+Base code,no performance changes
+The best least square line is: Y = 1.26393 * X + 0.823035
+ 
+hw8c_opt2_0:
+Time elapsed (data) = 10.230000 sec.
+Avg Elapsed CPU Time Over 100 iterations (data) = 0.1023 sec.
+Time elapsed (calculation) = 0.600000 sec.
+Avg Elapsed CPU Time Over 20000 iterations (calculation) = 3e-05 sec.
+Loop is currently being unrolled by a factor of Two
+
+Base code,no performance changes
+The best least square line is: Y = 1.26393 * X + 0.823035
+ 
+hw8c_opt2:
+Time elapsed (data) = 1.770000 sec.
+Avg Elapsed CPU Time Over 100 iterations (data) = 0.0177 sec.
+Time elapsed (calculation) = 0.130000 sec.
+Avg Elapsed CPU Time Over 20000 iterations (calculation) = 6.5e-06 sec.
+Loop is currently being unrolled by a factor of Two
+
+Base code,no performance changes
+The best least square line is: Y = 1.26393 * X + 0.823035
+	
+hw8c_opt2_2:
+Time elapsed (data) = 1.760000 sec.
+Avg Elapsed CPU Time Over 100 iterations (data) = 0.0176 sec.
+Time elapsed (calculation) = 0.140000 sec.
+Avg Elapsed CPU Time Over 20000 iterations (calculation) = 7e-06 sec.
+Loop is currently being unrolled by a factor of Two
+
+Base code,no performance changes
+The best least square line is: Y = 1.26393 * X + 0.823035
+ 
+hw8c_opt2_3:
+Time elapsed (data) = 1.590000 sec.
+Avg Elapsed CPU Time Over 100 iterations (data) = 0.0159 sec.
+Time elapsed (calculation) = 0.130000 sec.
+Avg Elapsed CPU Time Over 20000 iterations (calculation) = 6.5e-06 sec.
+Loop is currently being unrolled by a factor of Two
+
+Base code,no performance changes
+The best least square line is: Y = 1.26393 * X + 0.823035
+ 
+hw8c_opt3_0:
+Time elapsed (data) = 8.990000 sec.
+Avg Elapsed CPU Time Over 100 iterations (data) = 0.0899 sec.
+Time elapsed (calculation) = 0.570000 sec.
+Avg Elapsed CPU Time Over 20000 iterations (calculation) = 2.85e-05 sec.
+Loop is currently being unrolled by a factor of Two
+
+Base code,no performance changes
+The best least square line is: Y = 1.26544 * X + 0.106488
+	
+hw8c_opt3:
+Time elapsed (data) = 1.810000 sec.
+Avg Elapsed CPU Time Over 100 iterations (data) = 0.0181 sec.
+Time elapsed (calculation) = 0.080000 sec.
+Avg Elapsed CPU Time Over 20000 iterations (calculation) = 4e-06 sec.
+Loop is currently being unrolled by a factor of Two
+
+Base code,no performance changes
+The best least square line is: Y = 1.26544 * X + 0.106488
+ 
+hw8c_opt3_2:
+Time elapsed (data) = 1.610000 sec.
+Avg Elapsed CPU Time Over 100 iterations (data) = 0.0161 sec.
+Time elapsed (calculation) = 0.070000 sec.
+Avg Elapsed CPU Time Over 20000 iterations (calculation) = 3.5e-06 sec.
+Loop is currently being unrolled by a factor of Two
+
+Base code,no performance changes
+The best least square line is: Y = 1.26544 * X + 0.106488
+ 
+hw8c_opt3_0:
+Time elapsed (data) = 9.250000 sec.
+Avg Elapsed CPU Time Over 100 iterations (data) = 0.0925 sec.
+Time elapsed (calculation) = 0.580000 sec.
+Avg Elapsed CPU Time Over 20000 iterations (calculation) = 2.9e-05 sec.
+Loop is currently being unrolled by a factor of Two
+
+Base code,no performance changes
+The best least square line is: Y = 1.26544 * X + 0.106488
+ 

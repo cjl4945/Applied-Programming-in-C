@@ -1,0 +1,85 @@
+Analysis
+
+
+
+For the makefile, all, tets, opts, mem, help and clean were implemented as 
+instructed. The only problem that I encountered was when I ran the tests.
+When choosing a second guess for the secant algortihm, the first being -1.5,
+instead of the second guess being virtually close to the first guess, I had 
+to make the second guess -5.0 to get the correct root. It's definitely an
+issue with my secant algorithm in rootfind.c. I also only think it's a
+problem with negative numbers because when the test was ran on positive 
+numbers, the second guess was virtually close to the first and the right 
+answer was calculated.  
+
+
+
+
+After implementing the three methods for root finding, it was found that
+the -O3 optimization level was found to produce the lowest average
+time for all operations. The timing macros may show an average value of 0 due
+to not being able to accuratly represent a value that small. As to show
+that there is, in fact, a difference in the time, the total accumulated
+value for each timer is also printed. It was found that the bisection
+algorithm at level -O3, took significantly less time than the bisection
+algorithm at levels -O1 and -O2. 
+
+The way that the best optimization level was found was testing ./hw9 with
+any algorithm and the timing macros enabled. That was ran 5 times for 
+each optimization level from -O1 to -O3. After averging out each level's 
+5 test runs, the lowest average per iteration was selected, which was
+level -O3. 
+
+The time taken to execute each algorithm varies wildly on the bounds
+given. For the tests given the timing for each algorithm is given below at
+the -O3 optimization level. Data was collected for 50000 iterations. The info
+to the left of the arrow is the total time taken and the info to the right of
+the arrow is the time per iteration.
+
+                            bisection (-2.5, 2.5)
+                            1.56 -> 4.00E-5
+                            1.61 -> 3.22E-5
+                            1.55 -> 3.10E-5
+                            1.56 -> 4.00E-5
+			    1.57 -> 4.00E-5
+                            newton (-1.5)
+                            0.60 -> 1.20E-5
+                            0.60 -> 1.20E-5
+                            0.62 -> 1.24E-5
+			    0.63 -> 1.24E-5
+			    0.60 -> 1.20E-5
+                            
+                            newton (1.5)
+                            0.30 -> 6.00E-6
+                            0.30 -> 6.00E-6
+                            0.30 -> 6.00E-6
+			    0.33 -> 6.50E-6
+			    0.31 -> 6.00E-5
+                            
+                            secant (-1.5, -1.499999)
+                            0.68 -> 1.36E-5
+                            0.71 -> 1.42E-5
+                            0.71 -> 1.42E-5
+			    0.68 -> 1.36E-5
+			    0.68 -> 1.36E-5
+                            
+                            secant (1.5, 1.5000001)
+                            0.44 -> 8.80E-6
+                            0.44 -> 8.80E-6
+                            0.45 -> 9.00E-6
+			    0.45 -> 9.00E-6
+			    0.44 -> 8.80E-6
+
+As mentioned previously, the starting values of the guesses have an
+impact on timing performance. Between the two newton tests, the 1.5 starting
+value was faster because the derivative gave a point closer to a root than 
+-1.5 did. A similar story is true for the secant algorithm.
+
+
+secant method offset:
+When testing the secant method, the points -1.5 and 1.5 were used as the
+initial points. The second point was -1.5 + tolerance and 1.5 + tolerance.
+Because there is such a small difference between these two points from adding
+the tolerance to the initial value, the variability in the slope between the
+two points is much closer to the actual slope of the line. 
+

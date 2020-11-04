@@ -1,0 +1,35 @@
+1. The fucntion must be continuous and A and B, the upper and lower endpoints
+of the interval must bracket the root.
+
+2. When the the root has an odd multiplicity 
+
+3. No, is most likely never zero, but arbitrarily close.
+
+4. Halve the size of the bracketing interval enclosing the root. Choose a 
+smaller bracket that includes the roor. Repeat until bracket size is small 
+enough. You can stop making you bracket smaller once opposite signs are at the
+bracket endpoints and find the root. 
+
+5. You produce a upper half of interval that brackets a root with midpoint as
+lower endpoint.
+
+6. The newton and secant both use derivatives to approximate the root. 
+
+7. An escape hatch is prevent infinite loops.
+
+8. The Newton method requires a closed form expression for the derivative.
+
+9. newton = xn - (f(xn)/f'(xn));secant =xn-f(xn)((xn-xn-1)/(f(xn) - f(xn-1)))
+
+10. The 2nd guess does not have to bracket the root, it is just used to 
+calculate the slope.  Typically, the 2nd guess is + 0.001* of the first guess.
+
+11. enough.  The Newton method uses the local slope of the function and the 
+intersection of that slope with the X axis to create an improved guess.  
+Newton follows the slope down to the root.
+
+12.fabs is used for floating type data and abs returns the absolute value. 
+fabs is going to be more accurate than abs since it uses decimal places.
+
+13. The derivative of the slope can't be zero or very small, so it checks
+both cases. 

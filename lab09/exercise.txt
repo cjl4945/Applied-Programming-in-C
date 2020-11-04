@@ -1,0 +1,84 @@
+iter:0	a:0.000000	b:50.000000	x:25.000000	err:25.000000
+iter:1	a:25.000000	b:50.000000	x:37.500000	err:12.500000
+iter:2	a:25.000000	b:37.500000	x:31.250000	err:6.250000
+iter:3	a:31.250000	b:37.500000	x:34.375000	err:3.125000
+iter:4	a:34.375000	b:37.500000	x:35.937500	err:1.562500
+iter:5	a:34.375000	b:35.937500	x:35.156250	err:0.781250
+iter:6	a:35.156250	b:35.937500	x:35.546875	err:0.390625
+iter:7	a:35.546875	b:35.937500	x:35.742188	err:0.195312
+iter:8	a:35.546875	b:35.742188	x:35.644531	err:0.097656
+iter:9	a:35.644531	b:35.742188	x:35.693359	err:0.048828
+iter:10	a:35.644531	b:35.693359	x:35.668945	err:0.024414
+iter:11	a:35.668945	b:35.693359	x:35.681152	err:0.012207
+Bisection returned root: 35.687256
+
+2. Since are roots aren't going to be integers, precision is critical and 
+doubles provides the most precise results.
+
+3. a and b represent the brackets for the intervals in which the root in 
+contained in 
+
+4. it has 3 roots
+
+5. So my apporach was use my calculator to get an approxiamte of the roots
+and use ranges based on the approximates i recieved. The two other roots were:
+
+ 
+iter:0	a:-60.000000	b:-25.000000	x:-42.500000	err:17.500000
+iter:1	a:-60.000000	b:-42.500000	x:-51.250000	err:8.750000
+iter:2	a:-51.250000	b:-42.500000	x:-46.875000	err:4.375000
+iter:3	a:-51.250000	b:-46.875000	x:-49.062500	err:2.187500
+iter:4	a:-51.250000	b:-49.062500	x:-50.156250	err:1.093750
+iter:5	a:-51.250000	b:-50.156250	x:-50.703125	err:0.546875
+iter:6	a:-51.250000	b:-50.703125	x:-50.976562	err:0.273438
+iter:7	a:-50.976562	b:-50.703125	x:-50.839844	err:0.136719
+iter:8	a:-50.839844	b:-50.703125	x:-50.771484	err:0.068359
+iter:9	a:-50.839844	b:-50.771484	x:-50.805664	err:0.034180
+iter:10	a:-50.839844	b:-50.805664	x:-50.822754	err:0.017090
+Bisection returned root: -50.814209
+
+
+iter:0	a:40.000000	b:75.000000	x:57.500000	err:17.500000
+iter:1	a:40.000000	b:57.500000	x:48.750000	err:8.750000
+iter:2	a:48.750000	b:57.500000	x:53.125000	err:4.375000
+iter:3	a:48.750000	b:53.125000	x:50.937500	err:2.187500
+iter:4	a:50.937500	b:53.125000	x:52.031250	err:1.093750
+iter:5	a:52.031250	b:53.125000	x:52.578125	err:0.546875
+iter:6	a:52.578125	b:53.125000	x:52.851562	err:0.273438
+iter:7	a:52.578125	b:52.851562	x:52.714844	err:0.136719
+iter:8	a:52.578125	b:52.714844	x:52.646484	err:0.068359
+iter:9	a:52.578125	b:52.646484	x:52.612305	err:0.034180
+iter:10	a:52.612305	b:52.646484	x:52.629395	err:0.017090
+Bisection returned root: 52.637939
+
+
+Newton:
+
+1.
+iter:0	x0:1.000000	x1:35.602349	err:34.602349
+iter:1	x0:35.602349	x1:35.685284	err:0.082935
+Newton returned root: 35.685610
+
+2. The derivative of the motor function is 52.2 + 1.5x - 0.06x^2. The 
+derivative is needed becuase the this method essentially follows the slope 
+down to the root, and the derivative is basically a discription of how the
+slope changes in the function.
+
+3. No becuase bisection just keeps spliting the intervals in havles until 
+the root is found. Newton's method is more precise becuase uses the local 
+slope and the intersection of that slope with the x axis to create an 
+improved guess. 
+
+4.
+iter:0	x0:30.000000	x1:34.814815	err:4.814815
+iter:1	x0:34.814815	x1:35.653164	err:0.838349
+iter:2	x0:35.653164	x1:35.685560	err:0.032396
+Newton returned root: 35.685610
+
+5. No still the same as the results when it was ran with an initial guess of
+1.0
+
+6. Definitely Newton's method is more efficient than the Bisection becuase 
+of the number of iterations. The bisection method went through 11 iterations.
+While newtons method went through 2 for the first run and 3 for the second 
+run.  

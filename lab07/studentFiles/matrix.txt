@@ -1,0 +1,56 @@
+-------------- hw7c_1
+Elapsed CPU Time (DataTimer) = 1.65625 sec.
+Elapsed CPU Time per Iteration (DataTimer, 100) =  1.66e-02 sec.
+Elapsed CPU Time (CalcTimer) = 0.125 sec.
+Elapsed CPU Time per Iteration (CalcTimer, 20000) =  6.25e-06 sec.
+
+Base code,no performance changes
+The best least square line is : Y = 1.26393 * X + 0.823035
+-------------- hw7c_2
+Elapsed CPU Time (DataTimer) = 3.1875 sec.
+Elapsed CPU Time per Iteration (DataTimer, 200) =  1.59e-02 sec.
+Elapsed CPU Time (CalcTimer) = 0.21875 sec.
+Elapsed CPU Time per Iteration (CalcTimer, 40000) =  5.47e-06 sec.
+
+Base code,no performance changes
+The best least square line is : Y = 1.26393 * X + 0.823035
+-------------- hw7c_1m
+Elapsed CPU Time (DataTimer) = 1.54688 sec.
+Elapsed CPU Time per Iteration (DataTimer, 100) =  1.55e-02 sec.
+Elapsed CPU Time (CalcTimer) = 0.125 sec.
+Elapsed CPU Time per Iteration (CalcTimer, 20000) =  6.25e-06 sec.
+
+Base code,no performance changes
+The best least square line is : Y = 1.26393 * X + 0.823035
+-------------- hw7c_2m
+Elapsed CPU Time (DataTimer) = 3.10938 sec.
+Elapsed CPU Time per Iteration (DataTimer, 200) =  1.55e-02 sec.
+Elapsed CPU Time (CalcTimer) = 0.21875 sec.
+Elapsed CPU Time per Iteration (CalcTimer, 40000) =  5.47e-06 sec.
+
+Base code,no performance changes
+The best least square line is : Y = 1.26393 * X + 0.823035
+-------------- hw7cpp_1
+Elapsed CPU Time (DataTimer) = 0 sec.
+Elapsed CPU Time per Iteration (DataTimer, 100) =  0.00e+00 sec.
+Elapsed CPU Time (CalcTimer) = 0 sec.
+Elapsed CPU Time per Iteration (CalcTimer, 20000) =  0.00e+00 sec.
+The best least squares line is: Y = -nan * X + -nan
+-------------- hw7cpp_2
+Elapsed CPU Time (DataTimer) = 0.015625 sec.
+Elapsed CPU Time per Iteration (DataTimer, 200) =  7.81e-05 sec.
+Elapsed CPU Time (CalcTimer) = 0 sec.
+Elapsed CPU Time per Iteration (CalcTimer, 40000) =  0.00e+00 sec.
+The best least squares line is: Y = -nan * X + -nan
+-------------- hw7cpp_1m
+Elapsed CPU Time (DataTimer) = 0.3125 sec.
+Elapsed CPU Time per Iteration (DataTimer, 100) =  3.13e-03 sec.
+Elapsed CPU Time (CalcTimer) = 1.42188 sec.
+Elapsed CPU Time per Iteration (CalcTimer, 20000) =  7.11e-05 sec.
+The best least squares line is: Y = 1.26393 * X + 0.823035
+-------------- hw7cpp_2m
+Elapsed CPU Time (DataTimer) = 0.625 sec.
+Elapsed CPU Time per Iteration (DataTimer, 200) =  3.13e-03 sec.
+Elapsed CPU Time (CalcTimer) = 2.82812 sec.
+Elapsed CPU Time per Iteration (CalcTimer, 40000) =  7.07e-05 sec.
+The best least squares line is: Y = 1.26393 * X + 0.823035

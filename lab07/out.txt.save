@@ -1,0 +1,47 @@
+output file
+MACRO Example 2:
+the print statement in the macro, needed to have a semicolon on the end of 
+the statement. talk about how I fixed it with the parenthesis
+
+var1 in f2: 5
+var1 in f1: 10
+
+MACRO Example 3:
+The n in the macro need to be in parenthesises itself becuase it seems
+that the program took premdas into consideration. It seemed to multiply 5 and
+5 together first instead of of add the 5 and 5 first. Talk about how i got 30
+first
+
+MULTIPLY: 50
+
+MACRO Example 4:
+
+I think the output will result in x = -5 and abs = 4
+
+RESULT: 4
+X IS: -3
+
+The macro has two instructions inside of it. So when -5 gets passed it, it 
+turns abs into 4 and x not equals -4, then on the return x is then increased 
+again to change x to -3
+
+DYNAMIC 2d Array Example:
+
+ 
+The code malloc space for each row, them calloc space for each column.
+Then it begins populating the 2d array with random integers from 0-99.
+Then prints out the each element at each index of the 2d array. 
+
+It doesn't seem to have any issues with the program. 
+
+There is 144 bytes of memory that have been leaked
+
+
+No, free(A) won't do the trick because you must free all the space allocated 
+for the columns.
+ 
+83.000000	86.000000	77.000000	15.000000	93.000000	
+35.000000	86.000000	92.000000	49.000000	21.000000	
+62.000000	27.000000	90.000000	59.000000	63.000000	
+
+Talk about the traversing through the 2d array and 

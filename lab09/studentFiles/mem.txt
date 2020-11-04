@@ -1,0 +1,96 @@
+bisection ‐2.5, 2.5:
+==1764== Memcheck, a memory error detector
+==1764== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==1764== Using Valgrind-3.14.0 and LibVEX; rerun with -h for copyright info
+==1764== Command: ./hw9 -b -t 1E-6 -ga -2.5 -gb 2.5 -v
+==1764== 
+iter:0 | a:-2.500000 | b:2.500000 | x:0.000000 | err:2.500000 
+iter:1 | a:0.000000 | b:2.500000 | x:1.250000 | err:1.250000 
+iter:2 | a:1.250000 | b:2.500000 | x:1.875000 | err:0.625000 
+iter:3 | a:1.875000 | b:2.500000 | x:2.187500 | err:0.312500 
+iter:4 | a:1.875000 | b:2.187500 | x:2.031250 | err:0.156250 
+iter:5 | a:1.875000 | b:2.031250 | x:1.953125 | err:0.078125 
+iter:6 | a:1.953125 | b:2.031250 | x:1.992188 | err:0.039062 
+iter:7 | a:1.953125 | b:1.992188 | x:1.972656 | err:0.019531 
+iter:8 | a:1.972656 | b:1.992188 | x:1.982422 | err:0.009766 
+iter:9 | a:1.982422 | b:1.992188 | x:1.987305 | err:0.004883 
+iter:10 | a:1.987305 | b:1.992188 | x:1.989746 | err:0.002441 
+iter:11 | a:1.989746 | b:1.992188 | x:1.990967 | err:0.001221 
+iter:12 | a:1.990967 | b:1.992188 | x:1.991577 | err:0.000610 
+iter:13 | a:1.990967 | b:1.991577 | x:1.991272 | err:0.000305 
+iter:14 | a:1.990967 | b:1.991272 | x:1.991119 | err:0.000153 
+iter:15 | a:1.991119 | b:1.991272 | x:1.991196 | err:0.000076 
+iter:16 | a:1.991119 | b:1.991196 | x:1.991158 | err:0.000038 
+iter:17 | a:1.991119 | b:1.991158 | x:1.991138 | err:0.000019 
+iter:18 | a:1.991119 | b:1.991138 | x:1.991129 | err:0.000010 
+iter:19 | a:1.991129 | b:1.991138 | x:1.991134 | err:0.000005 
+iter:20 | a:1.991134 | b:1.991138 | x:1.991136 | err:0.000002 
+iter:21 | a:1.991136 | b:1.991138 | x:1.991137 | err:0.000001 
+iter:22 | a:1.991136 | b:1.991137 | x:1.991137 | err:0.000001 
+output of bisection with guess1 = -2.500000 and guess2 = 2.500000 is 1.991137 
+
+==1764== 
+==1764== HEAP SUMMARY:
+==1764==     in use at exit: 0 bytes in 0 blocks
+==1764==   total heap usage: 0 allocs, 0 frees, 0 bytes allocated
+==1764== 
+==1764== All heap blocks were freed -- no leaks are possible
+==1764== 
+==1764== For counts of detected and suppressed errors, rerun with: -v
+==1764== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+	
+secant -1.5 -1.6
+==1768== Memcheck, a memory error detector
+==1768== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==1768== Using Valgrind-3.14.0 and LibVEX; rerun with -h for copyright info
+==1768== Command: ./hw9 -s -t 1E-6 -ga -1.5 -gb -1.6 -v
+==1768== 
+iter:0 | x0:-1.500000 | x1:-1.600000 | err:0.100000 
+iter:1 | x0:-1.600000 | x1:-1.274116 | err:0.325884 
+iter:2 | x0:-1.274116 | x1:-1.178031 | err:0.096085 
+iter:3 | x0:-1.178031 | x1:-1.045460 | err:0.132571 
+iter:4 | x0:-1.045460 | x1:-0.574847 | err:0.470612 
+iter:5 | x0:-0.574847 | x1:-1.106221 | err:0.531374 
+iter:6 | x0:-1.106221 | x1:-1.173693 | err:0.067472 
+iter:7 | x0:-1.173693 | x1:-0.858886 | err:0.314807 
+iter:8 | x0:-0.858886 | x1:-1.483451 | err:0.624565 
+iter:9 | x0:-1.483451 | x1:-0.439169 | err:1.044282 
+output of secant with guess1 = -1.500000 and guess2 = -1.600000 is nan 
+
+==1768== 
+==1768== HEAP SUMMARY:
+==1768==     in use at exit: 0 bytes in 0 blocks
+==1768==   total heap usage: 0 allocs, 0 frees, 0 bytes allocated
+==1768== 
+==1768== All heap blocks were freed -- no leaks are possible
+==1768== 
+==1768== For counts of detected and suppressed errors, rerun with: -v
+==1768== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+	
+newton -1.5
+==1772== Memcheck, a memory error detector
+==1772== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==1772== Using Valgrind-3.14.0 and LibVEX; rerun with -h for copyright info
+==1772== Command: ./hw9 -n -t 1E-6 -ba -1.5 -v
+==1772== 
+iter:0 | x0:-1.500000 | x1:-1.248056 | err:0.125972 
+iter:1 | x0:-1.248056 | x1:-1.075513 | err:0.086272 
+iter:2 | x0:-1.075513 | x1:-4.012949 | err:-1.468718 
+iter:3 | x0:-4.012949 | x1:-5.240970 | err:-0.614011 
+iter:4 | x0:-5.240970 | x1:-4.920795 | err:0.160088 
+iter:5 | x0:-4.920795 | x1:-4.878801 | err:0.020997 
+iter:6 | x0:-4.878801 | x1:-4.876443 | err:0.001179 
+iter:7 | x0:-4.876443 | x1:-4.876332 | err:0.000056 
+iter:8 | x0:-4.876332 | x1:-4.876327 | err:0.000003 
+iter:9 | x0:-4.876327 | x1:-4.876327 | err:0.000000 
+output of newton with guess1 = -1.500000 is -4.876327 
+
+==1772== 
+==1772== HEAP SUMMARY:
+==1772==     in use at exit: 0 bytes in 0 blocks
+==1772==   total heap usage: 0 allocs, 0 frees, 0 bytes allocated
+==1772== 
+==1772== All heap blocks were freed -- no leaks are possible
+==1772== 
+==1772== For counts of detected and suppressed errors, rerun with: -v
+==1772== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)

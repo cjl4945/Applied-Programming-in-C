@@ -1,0 +1,229 @@
+Analysis:
+
+PRELAB:
+1. The difference in the allocation and deacllocation approaches allocated
+memory for each row, and inside each row memory was also allocated for each
+each column. Then to deallocate memory, we went through each column in each
+row and deallocated the memory, the deallocated the rows.
+
+Example 1:
+
+Operation 15^2/3 repeated 10000000 times
+** CLOCKS_PER_SEC  is 1000000 ticks/sec
+** Size of clock_t is 8 bytes
+   Total Time = 60000 "clocks ticks"
+   Total Time = 0.060000 [sec]
+   Time per Iteration=6e-09 [sec]
+
+Clocks per second was 1000000.
+The time in clock ticks = 600000
+The time in seconds = 0.06
+
+Timing Example 2:
+
+
+Operation 75=15^2/3 repeated 1 times
+** CLOCKS_PER_SEC  is 1000000 ticks/sec
+
+2.
+
+Operation 75=15^2/3 repeated 10000000 times
+** CLOCKS_PER_SEC  is 1000000 ticks/sec
+** Size of clock_t is 8 bytes
+   Total Time = 50000 "clocks ticks"
+   Total Time = 0.050000 [sec]
+   Time per Iteration=5e-09 [sec]
+
+
+Timing measurement with GNU Linux time:
+
+
+Operation 75=15^2/3 repeated 10000000 times
+** CLOCKS_PER_SEC  is 1000000 ticks/sec
+** Size of clock_t is 8 bytes
+   Total Time = 60000 "clocks ticks"
+   Total Time = 0.060000 [sec]
+   Time per Iteration=6e-09 [sec]
+real 0.06
+user 0.06
+sys 0.00
+
+ASSIGNMENT:
+First for the implementation for hw8c, hw8c_opt1, hw8c_opt2, hw8c_opt3 I had to add a some addition functionality. There were fairy simple. For hw8c, 
+all that was done was analyzing the speed and size of this program with 
+different optimization levels (O0-O3). For the hw8c_opt1, I had to change the 
+function Addpoint() and modify the malloc()/copy()/free() portion and 
+substitute it with realloc. I just replaced the malloc part with realloc and 
+deleted the malloc()/copy()/free() portion. Then the performance and size were 
+compared for each. For both hw8c_opt2 and hw8c_opt3, in the 
+CalculateCoefficients(), the objective was to unroll the loop by two. So I 
+just modified the for loop incremention step from ++ to += 2 so the loop would 
+increase by two. And then before the loop was called, a message was added to 
+indicate that the loop was being unrolled. For just hw8c_opt3, since the loop 
+was being unrolled and we had to change twice the amount of elements, each of
+the sub calculation had their own unique varible. For both hw8c_opt2 and 
+hw8c_opt3, the optimization levels and sizes were compared. 
+
+
+DATA TABLE:
+
+HW8C
+./hw8c_0
+Data timer per iteration: 0.0993
+Calculation timer per iteration:3.2e-05
+ls -la:16736
+text (code) size:2786
+data size:688
+
+./hw8c
+Data timer per iteration:0.0175
+Calculation timer per iteration:6.5e-06
+ls -la: 20312
+text (code) size:1458
+data size:496
+   
+./hw8c_2
+Data timer per iteration:0.016
+Calculation timer per iteration:6.5e-06
+ls -la:20792
+text (code) size:1474
+data size:496
+
+./hw8c_3
+Data timer per iteration:0.0164
+Calculation timer per iteration:6.5e-06
+ls -la:23400
+text (code) size:1826
+data size:496
+
+
+Just by the looks of the performance of each, the higher the optimization level, 
+the faster the performance. level 0, has the largest code size and data size
+which could be in theory the reason for a slower performance. It seems that 
+level 3 has the fastest performance, but not by that much compared to level 2
+and level 3 has a larger text size but the data timer per iteration is faster.
+For this portion of code, i would personally go with level 2 since it use 
+less memor space when run and was only .0004 secs slower than level 3. The size
+of files are larger as the levels increase. 
+
+
+
+OPT1
+./hw8c_opt1_0
+Data timer per iteration:0.0019
+Calculation timer per iteration:3.35e-05
+ls -la:16688
+text (code) size:2562
+data size:496
+
+./hw8c_opt1
+Data timer per iteration:0.002
+Calculation timer per iteration:8e-06
+ls -la:19920
+text (code) size:1314
+data size:496
+
+./hw8c_opt1_2
+Data timer per iteration:0.0019
+Calculation timer per iteration:7e-06
+ls -la: 20312
+text (code) size:1314
+data size:496
+
+./hw8c_opt1_3
+Data timer per iteration:0.0019
+Calculation timer per iteration:8.5e-06
+ls -la:22152
+text (code) size:1538
+data size:496
+
+
+Similar to hw8c.c portion, level 0 is the slowest per iteration. But level 2 
+seems to run faster than level 3. With the same data timer per iteration, but 
+different calculation time per iteration. The size of the files increase as 
+the level increase. The text size decreases as the level increases. But for 
+some odd reason the data size remianed the same for each level. That could 
+be that I might have been looking at the wrong section in ls -la. 
+
+
+OPT2
+./hw8c_opt2_0
+Data timer per iteration:0.1023
+Calculation timer per iteration:3e-05
+ls -la:16776
+text (code) size:3026
+data size:744
+
+./hw8c_opt2  
+Data timer per iteration:0.0177
+Calculation timer per iteration:6.5e-06
+ls -la:20432
+text (code) size:1522
+data size:552
+
+./hw8c_opt2_2
+Data timer per iteration:0.0176
+Calculation timer per iteration:7e-06
+ls -la:20968
+text (code) size:1538
+data size:552
+
+./hw8c_opt2_3
+Data timer per iteration:0.0159
+Calculation timer per iteration:6.5e-06
+ls -la:23592
+text (code) size:1954
+data size:552
+
+
+The data time per iteration generally decreases as the level decreases. 
+The calculation timer per iteration fluctuates a little between levels 1 -3. 
+The time decreases from level 1 to 2, but increases from 2 to 3. The ls -la
+size increases as the level increases. But the text and data sizes generally 
+decrease as the levels increase. Again, my data sizes are weird, they don't 
+match the data table provided if those are accurate measurements. 
+
+OPT3
+./hw8c_opt3_0
+Data timer per iteration:0.0899
+Calculation timer per iteration:2.85e-05
+ls -la:16864
+text (code) size:3058
+data size:744
+
+./hw8c_opt3  
+Data timer per iteration:0.0181
+Calculation timer per iteration:4e-06
+ls -la:20416
+text (code) size:1474
+data size:552
+
+./hw8c_opt3_2
+Data timer per iteration:0.0161
+Calculation timer per iteration:3.5e-06
+ls -la:20904
+text (code) size:1490
+data size:552
+
+./hw8c_opt3_3
+Data timer per iteration:0.0925
+Calculation timer per iteration:2.9e-05
+ls -la:23528
+text (code) size:1858
+data size:552
+
+The data time per iteration fluctuates by decreasing from level 0 to 2 then 
+increases from 2 to 3. the calculation time per iteration decreases as the 
+levels increase. The ls -la size increases as the levels increase. The 
+text size fluctuates just like the timer per iteration. 
+Just like my other hw8c and the other variations, the data size doesn't
+change after level 1. 
+
+
+
+ 
+A general conclusion that can taken from this data is that generally, the 
+higher the optimization level, the faster performance per iteration. But the
+ls -la file size a greater for higher levels and the text size a smaller
+for higher levels. hw8c_opt3.c was faster than hw8c_opt2, but not by much.
+It does seem that adding extra temporary variables helps performance. 
